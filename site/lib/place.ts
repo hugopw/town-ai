@@ -7,11 +7,13 @@ import type { Place, PlaceSlug } from "@/places/_types";
 import { harpenden } from "@/places/harpenden";
 import { southkesteven } from "@/places/southkesteven";
 import { suffolkMenta } from "@/places/suffolk-menta";
+import { highTown } from "@/places/high-town";
 
 const REGISTRY: Record<string, Place> = {
   harpenden,
   southkesteven,
   "suffolk-menta": suffolkMenta,
+  "high-town": highTown,
 };
 
 const FALLBACK: PlaceSlug = "harpenden";
