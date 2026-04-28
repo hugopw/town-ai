@@ -332,7 +332,7 @@ export const southkesteven: Place = {
   ],
 
   workedExample: {
-    slug: "harpenden-traffic", // route preserved; will rename per place in v1.1
+    slug: "worked-example",
     title: "South Kesteven rural transport",
     shortLabel: "rural transport",
     shortDescription:

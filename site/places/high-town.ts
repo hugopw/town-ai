@@ -248,7 +248,7 @@ export const highTown: Place = {
       title: "AI fluency for the workers being asked to compete with it",
       pitch:
         "Hands-on AI cohorts pitched specifically at gig-economy workers - drivers, delivery, hospitality, care - run in evening sessions at venues they actually go to.",
-      why: "The displacement risk in High Town isn't senior-knowledge-worker, like Harpenden. It's hourly. Pretending the same offer fits both populations isn't a kindness.",
+      why: "Most AI fluency programmes are built for desk workers. High Town's displacement risk is hourly: warehouse, taxi, hospitality, care. The same offer doesn't fit. Pretending it does isn't a kindness.",
       owner: "AI Optimist + community organisations + faith institutions",
       first: "Two pilots: one at a Hitchin Road community space, one at a creative-quarter venue.",
     },
@@ -332,7 +332,7 @@ export const highTown: Place = {
   ],
 
   workedExample: {
-    slug: "harpenden-traffic", // route preserved; page slug renamed in v1.1
+    slug: "worked-example",
     title: "Council English for High Town",
     shortLabel: "Council English",
     shortDescription:

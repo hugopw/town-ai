@@ -50,7 +50,7 @@ export function SiteFooter() {
               <li><Link href="/free-dreamers">Free Dreamers</Link></li>
               <li><Link href="/journey">The journey</Link></li>
               <li><Link href="/council">For the {place.council.type} council</Link></li>
-              <li><Link href="/harpenden-traffic">Worked example - {place.workedExample.shortLabel}</Link></li>
+              <li><Link href="/worked-example">Worked example - {place.workedExample.shortLabel}</Link></li>
             </ul>
           </div>
           <div>

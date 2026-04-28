@@ -15,8 +15,8 @@ import type {
   SubmissionStore,
 } from "./submissions";
 
-const SIGNUPS_KEY = "harpenden-ai:signups:v1";
-const PROBLEMS_KEY = "harpenden-ai:problems:v1";
+const SIGNUPS_KEY = "town-ai:signups:v1";
+const PROBLEMS_KEY = "town-ai:problems:v1";
 
 function uid(prefix: string) {
   return `${prefix}_${Math.random().toString(36).slice(2, 10)}_${Date.now().toString(36)}`;
@@ -39,7 +39,7 @@ function read<T>(key: string): T[] {
 function write<T>(key: string, value: T[]) {
   if (typeof window === "undefined") return;
   window.localStorage.setItem(key, JSON.stringify(value));
-  window.dispatchEvent(new CustomEvent(`harpenden-ai:store-changed:${key}`));
+  window.dispatchEvent(new CustomEvent(`town-ai:store-changed:${key}`));
 }
 
 export const localStore: SubmissionStore = {

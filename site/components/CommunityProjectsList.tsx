@@ -22,12 +22,12 @@ export function CommunityProjectsList() {
     void refresh();
     const handler = () => void refresh();
     window.addEventListener(
-      "harpenden-ai:store-changed:harpenden-ai:problems:v1",
+      "town-ai:store-changed:town-ai:problems:v1",
       handler
     );
     return () =>
       window.removeEventListener(
-        "harpenden-ai:store-changed:harpenden-ai:problems:v1",
+        "town-ai:store-changed:town-ai:problems:v1",
         handler
       );
   }, []);

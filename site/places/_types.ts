@@ -67,7 +67,7 @@ export type SeedProblem = {
 };
 
 export type WorkedExample = {
-  /** Slug used by the page route, e.g. "harpenden-traffic". */
+  /** Slug used by the page route, e.g. "worked-example". */
   slug: string;
   /** Display title, e.g. "Harpenden Traffic". */
   title: string;

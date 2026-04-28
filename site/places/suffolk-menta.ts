@@ -241,7 +241,7 @@ export const suffolkMenta: Place = {
       title: "Market-town high streets that thrive",
       pitch:
         "Bury, Halesworth, Beccles, Hadleigh, Saxmundham - every independent gets one hour with an AI coach and a shortlist of moves that buy them a day a week back.",
-      why: "Different in flavour from Harpenden's high street; same problem in shape. AI fluency at independent scale.",
+      why: "Suffolk's high streets carry the county's character. AI fluency at independent scale is how each market town keeps that character through the next decade.",
       owner: "Town traders + Menta + AI Optimist",
       first: "20-business pilot with the Small-Business AI Opportunity Diagnostic.",
     },
@@ -334,7 +334,7 @@ export const suffolkMenta: Place = {
   ],
 
   workedExample: {
-    slug: "harpenden-traffic", // route preserved; will rename in v1.1
+    slug: "worked-example",
     title: "Suffolk founder-AI fluency",
     shortLabel: "founder-AI",
     shortDescription:

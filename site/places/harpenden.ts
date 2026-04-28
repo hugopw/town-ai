@@ -211,8 +211,8 @@ export const harpenden: Place = {
         "Model the traffic impact of proposed developments on Southdown, the A1081 and the school-run network using open planning and transport data. Show residents the numbers, clearly.",
       why: "Gives residents an evidence-led voice in planning conversations that too often feel opaque.",
       owner: "Open data + council planning officers",
-      first: "See the /harpenden-traffic worked prototype.",
-      href: "/harpenden-traffic",
+      first: "See the /worked-example worked prototype.",
+      href: "/worked-example",
     },
     {
       id: "loneliness",
@@ -330,7 +330,7 @@ export const harpenden: Place = {
   ],
 
   workedExample: {
-    slug: "harpenden-traffic",
+    slug: "worked-example",
     title: "Harpenden traffic",
     shortLabel: "traffic",
     shortDescription:

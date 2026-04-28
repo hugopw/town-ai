@@ -18,8 +18,8 @@ export function Wordmark({
   accent?: string;
 }) {
   const place = getPlace();
-  // wordmark is e.g. "Harpenden.AI"; we split on the configured accent
-  // character so the dot can be coloured separately.
+  // We split the wordmark on the configured accent character so
+  // the dot can be coloured separately.
   const accent = overrideAccent ?? place.wordmarkAccent;
   const wm = overrideText ?? place.wordmark;
   const idx = wm.lastIndexOf(accent);
