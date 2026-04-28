@@ -1,10 +1,10 @@
-// When deployed under www.ainightschool.org/harpenden-ai we serve
-// from a sub-path. Toggle locally with HARPENDEN_BASE_PATH="" to run
-// at the root for development convenience.
-const basePath =
-  process.env.HARPENDEN_BASE_PATH !== undefined
-    ? process.env.HARPENDEN_BASE_PATH
-    : "/harpenden-ai";
+// Default: site serves at the root. Each tenant's Vercel project
+// just sets NEXT_PUBLIC_PLACE_SLUG and nothing else.
+//
+// If a tenant needs to be proxied behind a sub-path on a parent
+// domain (e.g. ainightschool.org/harpenden-ai/), set TOWN_AI_BASE_PATH
+// on that Vercel project. Otherwise leave it unset.
+const basePath = process.env.TOWN_AI_BASE_PATH ?? "";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
