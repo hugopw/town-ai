@@ -8,12 +8,7 @@ import { getPlace } from "@/lib/place";
 
 export function generateMetadata(): Metadata {
   const place = getPlace();
-  const noun =
-    place.council.type === "county"
-      ? "county"
-      : place.council.type === "district"
-        ? "district"
-        : "town";
+  const noun = place.placeNoun;
   return {
     title: `The ${noun}`,
     description: `Who lives in ${place.name}, what they do, and why this ${noun} is the right place to try something bold with AI.`,
@@ -22,12 +17,7 @@ export function generateMetadata(): Metadata {
 
 export default function CommunityPage() {
   const place = getPlace();
-  const noun =
-    place.council.type === "county"
-      ? "county"
-      : place.council.type === "district"
-        ? "district"
-        : "town";
+  const noun = place.placeNoun;
   return (
     <>
       <Section tone="chalk">

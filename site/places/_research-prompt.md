@@ -16,6 +16,119 @@ This SOP has two parts:
 
 ---
 
+## 0. The economic-imperative research (MANDATORY first step)
+
+**Before any other field is drafted**, run the economic-imperative
+research below. This is what becomes the `thesis` block - the
+"Honest bit" - and it sets the angle every other section is tuned
+to. Doing this last leads to template-shaped configs that don't
+actually fit the place.
+
+### The structural framework
+
+Every "Honest bit" follows the same four-beat structure. Researchers
+must surface evidence for each beat before writing a word of the
+thesis copy:
+
+1. **Structural exposure.** What is this place's economic shape?
+   Which occupations, sectors and employers dominate? Use ONS
+   Census 2021 TS063 (occupation), NOMIS BRES (employment by
+   sector), ASHE (earnings), and the council's own corporate /
+   economic strategy. Get the workforce mix in numbers, not
+   adjectives.
+2. **AI overlay.** What is the published evidence on how AI is
+   already restructuring those specific occupations and sectors?
+   Pull from IPPR (*Transformed by AI*, 2024), Tony Blair
+   Institute, IFS, OECD, sector bodies (UKHospitality, NFU, ABI),
+   and the named local employers' own AI announcements
+   (annual reports, press releases, McKinsey/BCG case studies).
+   Where national figures are applied to local data, say so.
+3. **Choice framing.** Name the choice the place is facing in
+   Hugo's own words: become a coal-mining town of the 21st century -
+   a place whose economic identity was built around work the world
+   stopped needing - or become one of the first places that figures
+   out how to apply AI for the good of everyone in it. Tie the
+   framing to a real local historical precedent where one exists
+   (Rowntree's / Terry's / Carriageworks for York; the post-war
+   commuter belt for Harpenden; the loss of agricultural employment
+   for South Kesteven).
+4. **Fluency answer.** Close on the AI-fluency response. "We don't
+   think the answer is fear / pleading / resignation. We think the
+   answer is fluency." Match the verb to the place's failure mode.
+
+### The length budget (HARD LIMITS)
+
+The "Honest bit" lives or dies on punch. Every honest-bit block must
+fit within:
+
+- **`thesis.headline`** - max ~14 words / 2 short sentences / 4
+  rendered lines on mobile. Pattern: `[one factual claim about THIS
+  place's exposure]. Pretending otherwise isn't a kindness.`
+  Examples already in tree: Harpenden (12 words), South Kesteven (13
+  words), York (11 words).
+- **`thesis.paragraphs`** - 3 paragraphs, ~210-230 words total.
+  Roughly: structural-exposure paragraph (~75 words), employers /
+  trap paragraph (~75 words), choice + fluency paragraph (~80
+  words). If a draft runs over, cut adjectives and connectives -
+  not evidence.
+- **No four-paragraph thesis.** If the case needs more room, the
+  evidence belongs in the stats array, not the prose.
+
+### The non-negotiables
+
+- **Every numeric claim must be sourced**, with a URL or a named
+  publication, in the research brief that accompanies the draft.
+  Stats published without a primary source must not ship.
+- **No superlatives without a comparative source.** "The largest X
+  in the north" requires a dataset showing the rank. Soften to "one
+  of the largest" if the comparison can't be evidenced.
+- **No headcount or employment figure older than 24 months** without
+  an explicit vintage qualifier in the label.
+- **Apply the unswappable test to the thesis itself.** Delete the
+  place name from the headline and paragraphs - a local should still
+  recognise their place, and a sceptical councillor should still
+  find the structural exposure case unavoidable.
+
+### Sources to draw from for the economic imperative
+
+In priority order:
+
+- **ONS** - Census 2021 (TS006 age, TS021 ethnicity, TS061 TTW,
+  TS062 NS-SEC, TS063 occupation, TS067 qualifications), mid-year
+  population estimates, BRES via NOMIS, ASHE earnings, Housing
+  Affordability bulletin, internal migration.
+- **HESA** - Graduate Outcomes Survey for university-area places.
+- **IPPR** - *Transformed by AI* (March 2024) for first-wave
+  generative-AI exposure by occupation.
+- **Tony Blair Institute** - *Impact of AI on the Labour Market*
+  (Nov 2024) and *Potential Impact of AI on the Public-Sector
+  Workforce* for council / NHS / civil-service exposure framing.
+- **Centre for Cities** - city-level benchmarking on tourism,
+  knowledge economy, productivity.
+- **Council's own corporate / economic strategy** and the latest
+  Combined Authority labour-market analysis.
+- **Named local employers' own AI disclosures** - annual reports,
+  newsroom releases, McKinsey/BCG case studies, earnings calls.
+- **Local press** (last 3 months) for live issues.
+- **Companies House** for business counts where ONS lag matters.
+
+### Fact-checking gate (before any copy ships)
+
+Before the draft moves out of research into the config file:
+
+- [ ] Every stat in `stats.hero` and `stats.community` carries a
+      working primary-source URL in the research notes.
+- [ ] Every claim in the `thesis.paragraphs` is traceable to either
+      a numbered stat or a cited published source.
+- [ ] Every named employer headcount is from the employer's own
+      most recent published source, or labelled with the year of
+      the figure.
+- [ ] Every superlative ("largest", "highest", "worst", "first")
+      has a comparative dataset behind it. If not - soften.
+- [ ] Run the unswappable test on the headline and paragraphs.
+
+---
+
 ## 1. Research brief
 
 ### Inputs you provide
@@ -146,6 +259,10 @@ Run through every item:
 
 - [ ] **Schema** - file compiles; `bunx tsc --noEmit` is clean.
 - [ ] **Build** - `NEXT_PUBLIC_PLACE_SLUG=<slug> bun run build` is clean.
+- [ ] **No cross-tenant leaks** - `./scripts/check-place-leaks.sh <slug>`
+      exits clean. This builds the tenant and greps the output for
+      every OTHER tenant's display name. Any leak (e.g. "Harpenden"
+      bundled into the York build) blocks deploy. This is non-negotiable.
 - [ ] **Stats sourced** - every `StatTile.source` has a real source URL or
       named publication (the `_research-prompt` checklist above).
 - [ ] **Thesis angle** - distinct from Harpenden's commuter-displacement angle
@@ -167,9 +284,33 @@ Run through every item:
 - [ ] **Email contact** - sub-addressed (`hugo+<slug>@pdubs.co`).
 - [ ] **The unswappable test** - delete the place name from a paragraph;
       can a local still recognise their town?
+- [ ] **Honest-bit four-beat present** - structural exposure, AI overlay,
+      coal-mining-town choice framing, fluency answer (see section 0).
+- [ ] **Every stat sourced to a primary URL** - the research notes
+      accompanying the PR contain a working primary-source URL for
+      every `StatTile.value`.
+- [ ] **Superlatives have comparative sources** - any "largest",
+      "highest", "worst", "first" claim cites the dataset showing
+      the rank, or has been softened.
+- [ ] **Employer headcounts current** - no figure older than 24
+      months without a vintage qualifier in the label.
+- [ ] **Thesis claims traceable** - every assertion in
+      `thesis.paragraphs` ties back to either a numbered stat or a
+      named published source.
 
-When all checks pass, commit and deploy a new Vercel project with
-`NEXT_PUBLIC_PLACE_SLUG=<slug>`.
+When all checks pass, deploy with the repeatable two-project
+pattern (see README "Hosting model"):
+
+1. Run `./scripts/tenant-deploy-snippet.sh <slug>` from the repo
+   root - it prints the exact env vars for the tenant Vercel
+   project and the rewrite pair to add to
+   `ainightschool-website-pr/vercel.json`.
+2. Create the tenant Vercel project (root = `site/`) with the
+   printed env vars (`PLACE_SLUG=<slug>` and
+   `TOWN_AI_BASE_PATH=/<slug>-ai`).
+3. Add the printed rewrite pair to
+   `ainightschool-website-pr/vercel.json` and deploy that repo.
+4. The tenant is live at `https://ainightschool.org/<slug>-ai`.
 
 ---
 

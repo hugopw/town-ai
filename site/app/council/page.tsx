@@ -19,16 +19,27 @@ export default function CouncilPage() {
   const place = getPlace();
   const partnersList = place.councilPartners.join(", ").replace(/, ([^,]*)$/, ", and $1");
   const tcType = place.council.type;
+  const noun = place.placeNoun;
   const accelTitle =
     tcType === "town"
       ? "Town Council edition"
       : tcType === "district" || tcType === "borough"
         ? "District Council edition"
-        : tcType === "city"
+        : tcType === "city" || (tcType === "unitary" && noun === "city")
           ? "City Council edition"
           : tcType === "county"
             ? "County Council edition"
-            : "Council edition";
+            : tcType === "unitary"
+              ? "Unitary Council edition"
+              : "Council edition";
+  const acceleratorAudience =
+    tcType === "town"
+      ? "small-to-mid town councils"
+      : tcType === "city" || (tcType === "unitary" && noun === "city")
+        ? "city councils"
+        : tcType === "unitary"
+          ? "unitary authorities"
+          : `${tcType} councils`;
   return (
     <>
       <Section tone="chalk">
@@ -41,7 +52,7 @@ export default function CouncilPage() {
           <p className="prose-body mt-6">
             {place.wordmark} only works if every resident hears about it.
             The council is the single largest awareness-building asset
-            this {tcType === "county" ? "county" : tcType === "district" ? "district" : "town"} has - its socials, email lists, direct mail,
+            this {noun} has - its socials, email lists, direct mail,
             community boards, venue networks, and trusted
             relationships. None of those can be replicated by paid
             marketing, and all of them are needed if we&rsquo;re
@@ -203,7 +214,7 @@ export default function CouncilPage() {
             The AI Transformation Accelerator - {accelTitle}.
           </h2>
           <p className="prose-body mt-5 max-w-3xl">
-            A six-session programme shaped specifically for {tcType === "town" ? "small-to-mid town councils" : `${tcType} councils`}. The goal isn&rsquo;t an impressive tech stack.
+            A six-session programme shaped specifically for {acceleratorAudience}. The goal isn&rsquo;t an impressive tech stack.
             It&rsquo;s an officer team that uses AI confidently every
             day, decisions that are better communicated, and residents
             who feel heard.

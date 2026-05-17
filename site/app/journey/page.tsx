@@ -14,12 +14,7 @@ export function generateMetadata(): Metadata {
 
 export default function JourneyPage() {
   const place = getPlace();
-  const noun =
-    place.council.type === "county"
-      ? "county"
-      : place.council.type === "district"
-        ? "district"
-        : "town";
+  const noun = place.placeNoun;
   const speakerOne = place.residentOffer.speakerSeries[0];
   const speakerTwo = place.residentOffer.speakerSeries[1];
   const venueA = place.residentOffer.physicalVenueExamples[0] ?? "the central venue";

@@ -4,12 +4,7 @@ import { Wordmark } from "./Wordmark";
 
 export function SiteFooter() {
   const place = getPlace();
-  const placeNoun =
-    place.council.type === "county"
-      ? "county"
-      : place.council.type === "district"
-        ? "district"
-        : "town";
+  const placeNoun = place.placeNoun;
   const initial = place.name.charAt(0);
   return (
     <footer className="mt-32 border-t border-ink/10 bg-ink text-chalk">

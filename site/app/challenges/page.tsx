@@ -41,6 +41,7 @@ export default function ChallengesPage() {
             contactEmail={place.contact.email}
             wordmark={place.wordmark}
             placeName={place.name}
+            placeNoun={place.placeNoun}
           />
         </div>
       </Section>

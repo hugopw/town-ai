@@ -10,12 +10,7 @@ import { getPlace } from "@/lib/place";
 
 export function generateMetadata(): Metadata {
   const place = getPlace();
-  const noun =
-    place.council.type === "county"
-      ? "county"
-      : place.council.type === "district"
-        ? "district"
-        : "town";
+  const noun = place.placeNoun;
   return {
     title: "I'm volunteering",
     description: `Become an AI Coach. Host a clinic. Join a working group. Your experience is exactly what your ${noun} needs.`,
@@ -24,12 +19,7 @@ export function generateMetadata(): Metadata {
 
 export default function VolunteerPage() {
   const place = getPlace();
-  const noun =
-    place.council.type === "county"
-      ? "county"
-      : place.council.type === "district"
-        ? "district"
-        : "town";
+  const noun = place.placeNoun;
   const challengeNames = place.challenges
     .slice(0, 4)
     .map((c) => c.title.toLowerCase().replace(/^./, (m) => m.toLowerCase()).split(",")[0])

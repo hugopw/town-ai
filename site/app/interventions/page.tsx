@@ -7,12 +7,7 @@ import { getPlace } from "@/lib/place";
 
 export function generateMetadata(): Metadata {
   const place = getPlace();
-  const noun =
-    place.council.type === "county"
-      ? "county"
-      : place.council.type === "district"
-        ? "district"
-        : "town";
+  const noun = place.placeNoun;
   return {
     title: "Interventions directory",
     description: `A shelf of programmes, diagnostics, and workshops the ${noun} can draw on - already designed, ready to run.`,

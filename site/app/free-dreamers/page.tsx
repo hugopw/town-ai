@@ -6,12 +6,7 @@ import { getPlace } from "@/lib/place";
 
 export function generateMetadata(): Metadata {
   const place = getPlace();
-  const noun =
-    place.council.type === "county"
-      ? "county"
-      : place.council.type === "district"
-        ? "district"
-        : "town";
+  const noun = place.placeNoun;
   return {
     title: "The Free Dreamers",
     description: `A small ${place.name} group deliberately curated to push the boundaries of what AI can do for the ${noun} - together.`,
@@ -20,12 +15,7 @@ export function generateMetadata(): Metadata {
 
 export default function FreeDreamersPage() {
   const place = getPlace();
-  const noun =
-    place.council.type === "county"
-      ? "county"
-      : place.council.type === "district"
-        ? "district"
-        : "town";
+  const noun = place.placeNoun;
   const principles = [
     {
       t: "Small, on purpose",

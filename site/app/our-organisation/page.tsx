@@ -13,38 +13,32 @@ export function generateMetadata(): Metadata {
   };
 }
 
-const steps = [
-  {
-    n: "01",
-    t: "You submit your problem",
-    b: "Two minutes. Plain English. No technical detail required.",
-  },
-  {
-    n: "02",
-    t: "It goes live as a community project",
-    b: "Other residents can join the working group and help solve it. The town does the work, with you.",
-  },
-  {
-    n: "03",
-    t: "We match a coach + a working group",
-    b: "AI Optimist coaches the team. Sherpas teens build the prototype. AI Night School alumni write it up. Everyone learns.",
-  },
-  {
-    n: "04",
-    t: "You ship something real",
-    b: "Within 90 days, your organisation has something concrete that helps the people who actually use you.",
-  },
-];
-
 export default function OrganisationPage() {
   const place = getPlace();
-  const noun =
-    place.council.type === "county"
-      ? "county"
-      : place.council.type === "district"
-        ? "district"
-        : "town";
+  const noun = place.placeNoun;
   const examples = place.personaPages.organisationExamples;
+  const steps = [
+    {
+      n: "01",
+      t: "You submit your problem",
+      b: "Two minutes. Plain English. No technical detail required.",
+    },
+    {
+      n: "02",
+      t: "It goes live as a community project",
+      b: `Other residents can join the working group and help solve it. The ${noun} does the work, with you.`,
+    },
+    {
+      n: "03",
+      t: "We match a coach + a working group",
+      b: "AI Optimist coaches the team. Sherpas teens build the prototype. AI Night School alumni write it up. Everyone learns.",
+    },
+    {
+      n: "04",
+      t: "You ship something real",
+      b: "Within 90 days, your organisation has something concrete that helps the people who actually use you.",
+    },
+  ];
   return (
     <>
       {/* HERO */}

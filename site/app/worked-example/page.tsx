@@ -16,12 +16,7 @@ export function generateMetadata(): Metadata {
 export default function TrafficPage() {
   const place = getPlace();
   const ex = place.workedExample;
-  const noun =
-    place.council.type === "county"
-      ? "county"
-      : place.council.type === "district"
-        ? "district"
-        : "town";
+  const noun = place.placeNoun;
   return (
     <>
       <Section tone="chalk">

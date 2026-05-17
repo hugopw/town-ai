@@ -6,13 +6,13 @@ import { getPlace } from "@/lib/place";
 
 export function generateMetadata(): Metadata {
   const place = getPlace();
-  const tagline = `${place.wordmark} - The UK's most AI-fluent ${place.council.type === "county" ? "county" : place.council.type === "district" ? "district" : "town"}`;
+  const tagline = `${place.wordmark} - The UK's most AI-fluent ${place.placeNoun}`;
   return {
     title: {
       default: tagline,
       template: `%s · ${place.wordmark}`,
     },
-    description: `A vision for ${place.name}: a whole ${place.council.type === "county" ? "county" : place.council.type === "district" ? "district" : "town"} fluent in AI, using it together to protect livelihoods and solve community problems. Developed by Hugo Pickford-Wardle - AI Optimist.`,
+    description: `A vision for ${place.name}: a whole ${place.placeNoun} fluent in AI, using it together to protect livelihoods and solve community problems. Developed by Hugo Pickford-Wardle - AI Optimist.`,
     openGraph: {
       title: tagline,
       description: `A vision document for ${place.council.name}. Developed by Hugo Pickford-Wardle - AI Optimist.`,

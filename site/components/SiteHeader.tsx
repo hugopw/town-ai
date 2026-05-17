@@ -28,12 +28,7 @@ const residentNav = [
 export function SiteHeader() {
   const pathname = usePathname() ?? "/";
   const place = getPlace();
-  const noun =
-    place.council.type === "county"
-      ? "county"
-      : place.council.type === "district"
-        ? "district"
-        : "town";
+  const noun = place.placeNoun;
   const councilNav = [
     { href: "/community", label: `The ${noun}` },
     { href: "/challenges", label: "Challenges" },

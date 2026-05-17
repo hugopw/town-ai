@@ -17,12 +17,7 @@ export function generateMetadata(): Metadata {
 
 export default function ResidentOfferPage() {
   const place = getPlace();
-  const noun =
-    place.council.type === "county"
-      ? "county"
-      : place.council.type === "district"
-        ? "district"
-        : "town";
+  const noun = place.placeNoun;
   const venueA = place.residentOffer.physicalVenueExamples[0] ?? "town venues";
   const venueB = place.residentOffer.physicalVenueExamples[1] ?? "community spaces";
   const speakerSummary = place.residentOffer.speakerSeries

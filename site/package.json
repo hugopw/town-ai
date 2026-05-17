@@ -3,8 +3,9 @@
   "version": "0.2.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3010",
-    "build": "next build",
+    "select-place": "bun scripts/select-place.ts",
+    "dev": "bun run select-place && next dev -p 3010",
+    "build": "bun run select-place && next build",
     "start": "next start -p 3010",
     "lint": "next lint"
   },

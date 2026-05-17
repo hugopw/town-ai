@@ -14,12 +14,7 @@ import { getPlace } from "@/lib/place";
 export default function Home() {
   const place = getPlace();
   const featured = getInterventions().slice(0, 6);
-  const placeNoun =
-    place.council.type === "county"
-      ? "county"
-      : place.council.type === "district"
-        ? "district"
-        : "town";
+  const placeNoun = place.placeNoun;
   const homepageAssets = place.councilAssets.slice(0, 6);
 
   return (
@@ -216,7 +211,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="mt-10">
-            <PriorityChooser items={place.priorityItems} contactEmail={place.contact.email} wordmark={place.wordmark} />
+            <PriorityChooser items={place.priorityItems} contactEmail={place.contact.email} wordmark={place.wordmark} placeName={place.name} placeNoun={place.placeNoun} />
           </div>
         </div>
       </Section>

@@ -22,6 +22,7 @@ export const highTown: Place = {
   wordmark: "HighTown.AI",
   wordmarkAccent: ".",
   domainHint: "hightown.ai",
+  placeNoun: "neighbourhood",
 
   council: {
     name: "Luton Borough Council",

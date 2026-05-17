@@ -11,8 +11,12 @@ spins up by writing one config, not by forking.
 ## Working here
 
 - Place identity is selected at build time via
-  `PLACE_SLUG=<slug>` (default `harpenden`). The active config is
-  loaded by `site/lib/place.ts`.
+  `NEXT_PUBLIC_PLACE_SLUG=<slug>` (required — there is no default).
+  The active config is loaded by `site/lib/place.ts`. The
+  `NEXT_PUBLIC_` prefix is non-negotiable: it is the only way the
+  slug reaches the client bundle, so client components render the
+  right place's name. Setting `PLACE_SLUG` alone is rejected on
+  purpose and throws at startup.
 - The QA bar for the Harpenden tenant is a **byte-equivalent
   visual rendering** of the current `harpenden-ai` deployment. If
   the Harpenden site looks any different after refactor, that's a

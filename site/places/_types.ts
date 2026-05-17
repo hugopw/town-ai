@@ -138,6 +138,14 @@ export type Place = {
   wordmarkAccent: string;
   /** Apex domain hint shown in the site, e.g. "harpenden.ai". */
   domainHint: string;
+  /**
+   * Singular noun for the place itself - "town", "city", "district",
+   * "borough", "county", "neighbourhood". Used wherever site copy
+   * refers to "your town" / "your city" / "your county". This is
+   * about the *place*, not the *council type* - High Town is a
+   * "neighbourhood" even though Luton Borough Council is a borough.
+   */
+  placeNoun: string;
 
   // -----------------------------------------------------------------
   // The council

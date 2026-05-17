@@ -13,18 +13,13 @@ export function generateMetadata(): Metadata {
   const place = getPlace();
   return {
     title: "I'm a leader",
-    description: `Get fluent in AI before your role does. ${place.name}-priced AI Night School cohorts, a residents-only speaker series, and a community of senior peers in ${place.council.type === "county" ? "the county" : place.council.type === "district" ? "the district" : "town"}.`,
+    description: `Get fluent in AI before your role does. ${place.name}-priced AI Night School cohorts, a residents-only speaker series, and a community of senior peers in ${place.placeNoun === "town" ? "town" : `the ${place.placeNoun}`}.`,
   };
 }
 
 export default function LeaderPage() {
   const place = getPlace();
-  const noun =
-    place.council.type === "county"
-      ? "county"
-      : place.council.type === "district"
-        ? "district"
-        : "town";
+  const noun = place.placeNoun;
   const speakerNames = place.residentOffer.speakerSeries
     .filter((s) => s.name !== "Rolling roster")
     .map((s) => s.name)

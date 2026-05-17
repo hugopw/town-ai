@@ -16,18 +16,13 @@ export function generateMetadata(): Metadata {
   const place = getPlace();
   return {
     title: `Welcome to ${place.wordmark} - for residents`,
-    description: `Your ${place.council.type === "county" ? "county" : place.council.type === "district" ? "district" : "town"}. Your AI. Whether you lead a business, you're 14-18, you've got hours to give, or you run an organisation that needs help - there's a door here for you.`,
+    description: `Your ${place.placeNoun}. Your AI. Whether you lead a business, you're 14-18, you've got hours to give, or you run an organisation that needs help - there's a door here for you.`,
   };
 }
 
 export default function WelcomePage() {
   const place = getPlace();
-  const noun =
-    place.council.type === "county"
-      ? "county"
-      : place.council.type === "district"
-        ? "district"
-        : "town";
+  const noun = place.placeNoun;
   return (
     <>
       {/* HERO */}
@@ -96,8 +91,8 @@ export default function WelcomePage() {
             <PersonaCard
               tone="volunteer"
               who="For volunteers"
-              title="I’ve got time to give. I want to help my town."
-              blurb="Become an AI Coach, host a weekly clinic, or join a community working group. Your experience is exactly what your town needs."
+              title={`I’ve got time to give. I want to help my ${noun}.`}
+              blurb={`Become an AI Coach, host a weekly clinic, or join a community working group. Your experience is exactly what your ${noun} needs.`}
               cta="See volunteer roles"
               href="/im-volunteering"
               decoration={<MiniHugo pose="thumbs-up" size="fit" />}

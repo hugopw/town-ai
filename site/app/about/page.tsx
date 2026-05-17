@@ -14,12 +14,7 @@ export function generateMetadata(): Metadata {
 
 export default function AboutPage() {
   const place = getPlace();
-  const noun =
-    place.council.type === "county"
-      ? "county"
-      : place.council.type === "district"
-        ? "district"
-        : "town";
+  const noun = place.placeNoun;
   return (
     <>
       <Section tone="chalk">

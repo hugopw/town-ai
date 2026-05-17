@@ -16,6 +16,7 @@ export const southkesteven: Place = {
   wordmark: "SouthKesteven.AI",
   wordmarkAccent: ".",
   domainHint: "southkesteven.ai",
+  placeNoun: "district",
 
   council: {
     name: "South Kesteven District Council",
@@ -39,11 +40,11 @@ export const southkesteven: Place = {
   thesis: {
     eyebrow: "The honest bit",
     headline:
-      "South Kesteven's young people leave. Pretending they're coming back isn't a plan.",
+      "South Kesteven's young people leave and mostly don't come back. Pretending otherwise isn't a plan.",
     paragraphs: [
-      "Every year, our brightest 18-year-olds get on a train at Grantham and don't get off again. They go to cities for university, careers, salaries, and lives this district hasn't shown them how to build here. The schools are good. The houses are affordable. The countryside is beautiful. None of that is what they're leaving for.",
-      "The same generation that's leaving is the one being asked to compete with AI-augmented graduates from anywhere on earth. Our market towns - Grantham, Stamford, Bourne, the Deepings - need them. Our agricultural and food businesses, our high streets, our growing care economy, our energy sector all need them. Without them, the district ages without a successor.",
-      "We don't think the answer is to plead. We think the answer is fluency - enough AI capability across South Kesteven that a young person here can build a future as ambitious as anywhere, without leaving. And enough AI capability across the businesses they'd work for that those businesses are still here when they're ready.",
+      "Every year, more of our 18-year-olds get on a train at Grantham than get off it. The 16-24 cohort has been shrinking as a share of the district for a decade; the median age is now 46 - three years older than in 2011 - and the over-65s have grown by nearly 30%. Young people go to cities for university, careers, salaries, and lives this district hasn't shown them how to build here. The schools are good. The houses are affordable. The countryside is beautiful. None of that is what they're leaving for.",
+      "The generation that's leaving is the one being asked to compete with AI-augmented graduates from anywhere on earth. Our market towns - Grantham, Stamford, Bourne, the Deepings - need them. Our agricultural and food businesses, our high streets, our growing care economy, and our clean-energy sector (worth £306m in 2023/24) all need them. Without them, the district ages without a successor.",
+      "South Kesteven has a choice to make. Become a coal-mining district of the 21st century - a place whose young people leave because the economy didn't equip them to stay - or become one of the first places that figures out how to give a young person here a future as ambitious as anywhere, without leaving. We don't think the answer is to plead. We think the answer is fluency - enough AI capability across South Kesteven that a young person here can build that future, and enough AI capability across the businesses they'd work for that those businesses are still here when they're ready.",
     ],
     angle: "youth-retention",
     secondQuestion: {

@@ -16,6 +16,7 @@ export const suffolkMenta: Place = {
   wordmark: "Suffolk.AI",
   wordmarkAccent: ".",
   domainHint: "suffolk-ai.org",
+  placeNoun: "county",
 
   council: {
     name: "Menta and Suffolk County Council",

@@ -10,12 +10,15 @@ export function PriorityChooser({
   contactEmail,
   wordmark,
   placeName,
+  placeNoun = "town",
 }: {
   items: PriorityItem[];
   contactEmail: string;
   wordmark: string;
   /** Optional - used in the explainer paragraph. Defaults to wordmark. */
   placeName?: string;
+  /** Singular noun for the place ("town", "city", "district"). */
+  placeNoun?: string;
 }) {
   const [items, setItems] = useState<PriorityItem[]>(initial);
   const initialIds = useMemo(
@@ -55,7 +58,7 @@ export function PriorityChooser({
         Drag-equivalent buttons. Re-order the list to match how you&rsquo;d
         prioritise {placeName ?? wordmark.split(".")[0]}&rsquo;s first community AI projects. This is a
         vision document - today this lives in your browser. When we launch,
-        it will feed directly into the town&rsquo;s live project queue.
+        it will feed directly into the {placeNoun}&rsquo;s live project queue.
       </p>
 
       <ol className="mt-8 space-y-3">

@@ -11,6 +11,7 @@ export const harpenden: Place = {
   wordmark: "Harpenden.AI",
   wordmarkAccent: ".",
   domainHint: "harpenden.ai",
+  placeNoun: "town",
 
   council: {
     name: "Harpenden Town Council",
@@ -36,9 +37,9 @@ export const harpenden: Place = {
     headline:
       "The displacement risk in Harpenden is higher than average. Pretending otherwise isn't a kindness.",
     paragraphs: [
-      "Harpenden sits on the Thameslink, and an unusually large share of its working-age residents commute into London for senior knowledge-economy roles - consulting, finance, technology, legal, marketing. These are the exact roles every large corporate is now quietly modelling for AI-driven headcount reduction.",
-      "The same households have also invested heavily in their children's education on the assumption that university leads to a career like the parents'. That assumption deserves honest re-examination.",
-      "We don't think the answer is fear. We think the answer is fluency - enough AI literacy to keep residents valuable, their children equipped, their businesses thriving, and their council ahead of the curve.",
+      "Harpenden sits on the Thameslink. 21% of St Albans district's workforce commutes into London - 7.5% into the City alone - and Harpenden's wards consistently sit in the top band for higher managerial, administrative and professional occupations. The firms employing those commuters - the Big Four accountancies, the major UK banks, the FTSE 100 telecoms and the consultancies - are already cutting entry and mid-level headcount in direct response to AI. The question now is how far up the pyramid that pressure travels.",
+      "The same households have also invested heavily in their children's education on the assumption that university leads to a career like the parents'. With graduate intake falling sharply across the Big Four and major employers in the past two years, that assumption deserves honest re-examination.",
+      "Harpenden has a choice to make. Become a coal-mining town of the 21st century - a place whose economic identity was built around work the world stopped needing - or become one of the first places that figures out how to apply AI for the good of everyone in it. We don't think the answer is fear. We think the answer is fluency - enough AI literacy to keep residents valuable, their children equipped, their businesses thriving, and their council ahead of the curve.",
     ],
     angle: "commuter-displacement",
     secondQuestion: {
