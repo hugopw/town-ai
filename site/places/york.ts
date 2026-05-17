@@ -579,7 +579,7 @@ export const york: Place = {
   ],
 
   manager: {
-    name: "Hugo", // TODO: replace with local York manager name when assigned
+    name: "Kathy Walker",
     emailAlias: "hugo+yorkai@ainightschool.org",
   },
 

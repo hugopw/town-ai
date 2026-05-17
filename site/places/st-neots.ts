@@ -590,7 +590,7 @@ export const stNeots: Place = {
   ],
 
   manager: {
-    name: "Hugo", // TODO: replace with local St Neots manager name when assigned
+    name: "James Maclaine",
     emailAlias: "hugo+stneotsai@ainightschool.org",
   },
 

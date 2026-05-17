@@ -589,7 +589,7 @@ export const brent: Place = {
   ],
 
   manager: {
-    name: "Hugo", // TODO: replace with local Brent manager name when assigned
+    name: "Shashin Shah",
     emailAlias: "hugo+brentai@ainightschool.org",
   },
 
