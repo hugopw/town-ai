@@ -42,7 +42,7 @@ export const suffolkMenta: Place = {
     headline:
       "Every Suffolk founder has heard about AI. Almost none have built with it. Pretending that gap closes itself isn't a kindness.",
     paragraphs: [
-      "Suffolk has the deepest founder network outside London. Thirty years of Menta. The New Anglia ecosystem. Adastral Park's R&amp;D footprint. Agricultural and energy supply chains of national importance. Few counties have this combination of capability, mentorship and technical depth - and we've spent two years now telling our founders that AI matters.",
+      "Suffolk has the deepest founder network outside London. Thirty years of Menta. The New Anglia ecosystem. Adastral Park's R&D footprint. Agricultural and energy supply chains of national importance. Few counties have this combination of capability, mentorship and technical depth - and we've spent two years now telling our founders that AI matters.",
       "Telling isn't teaching. The founders we'd back to lead Suffolk's next decade have heard the AI talks, watched the conference panels, downloaded the playbooks. They haven't, mostly, built anything inside their own businesses with AI. Not because they can't - because nobody's sat with them, in a Suffolk room, and shown them how. That's the gap.",
       "We don't think the answer is more talks. We think the answer is a Menta-shaped, founder-shaped, peer-led cohort - the kind of practical, hands-on coaching Suffolk's founders already trust Menta to deliver in every other domain. AI fluency, the way Suffolk's always done founder support: at scale, locally, with each other.",
     ],
@@ -92,7 +92,7 @@ export const suffolkMenta: Place = {
       {
         value: "BT Adastral Park",
         label:
-          "One of the UK's largest single-site R&amp;D campuses, on Suffolk soil",
+          "One of the UK's largest single-site R&D campuses, on Suffolk soil",
         source: "BT Group",
       },
     ],
@@ -121,13 +121,13 @@ export const suffolkMenta: Place = {
       {
         value: "~6.5%",
         label:
-          "Of jobs in agriculture, forestry &amp; fishing - several times the national average",
+          "Of jobs in agriculture, forestry & fishing - several times the national average",
         source: "ONS (TBC)",
       },
       {
         value: "Adastral Park",
         label:
-          "BT's R&amp;D campus, with serious AI and networks capability on the doorstep",
+          "BT's R&D campus, with serious AI and networks capability on the doorstep",
         source: "BT Group",
       },
       {
@@ -143,7 +143,7 @@ export const suffolkMenta: Place = {
       },
     ],
     communityCaption:
-      "Figures drawn from ONS Census 2021, ONS Business Counts, and county-published data. Suffolk's character is plural - founder-dense around Ipswich, agricultural across High Suffolk, coastal in Lowestoft and Aldeburgh, R&amp;D-heavy at Adastral Park. Once Menta and SCC share local insight, every figure will be sharpened. (80% draft - to be upgraded by the content prompt.)",
+      "Figures drawn from ONS Census 2021, ONS Business Counts, and county-published data. Suffolk's character is plural - founder-dense around Ipswich, agricultural across High Suffolk, coastal in Lowestoft and Aldeburgh, R&D-heavy at Adastral Park. Once Menta and SCC share local insight, every figure will be sharpened. (80% draft - to be upgraded by the content prompt.)",
   },
 
   anchors: [
@@ -155,7 +155,7 @@ export const suffolkMenta: Place = {
     {
       name: "BT Adastral Park",
       role:
-        "one of the UK's largest single-site R&amp;D campuses, with deep AI capability",
+        "one of the UK's largest single-site R&D campuses, with deep AI capability",
       use: "Potential mentoring partner; an obvious AI-coach pipeline.",
     },
     {
@@ -164,27 +164,27 @@ export const suffolkMenta: Place = {
       use: "Convening power, partnership endorsement, channel access.",
     },
     {
-      name: "New Anglia LEP &amp; partner growth networks",
+      name: "New Anglia LEP & partner growth networks",
       role: "the wider business-support ecosystem",
       use: "Distribution channel; programme partner.",
     },
     {
-      name: "University of Suffolk &amp; Suffolk New College",
+      name: "University of Suffolk & Suffolk New College",
       role: "skills, talent, and student-led research capacity",
       use: "Partner for Sherpas AI cohorts and AI Coach training.",
     },
     {
-      name: "Sizewell &amp; the energy sector",
+      name: "Sizewell & the energy sector",
       role: "Suffolk's serious low-carbon energy footprint",
       use: "AI in critical infrastructure; long-horizon talent partner.",
     },
     {
-      name: "Suffolk's market towns &amp; coastal communities",
+      name: "Suffolk's market towns & coastal communities",
       role: "Bury, Newmarket, Lowestoft, Aldeburgh, Halesworth and others",
       use: "Each gets its own working group; one county, many places.",
     },
     {
-      name: "East Anglian Daily Times &amp; BBC Radio Suffolk",
+      name: "East Anglian Daily Times & BBC Radio Suffolk",
       role: "where the county actually finds out what's happening",
       use: "",
     },
@@ -442,7 +442,7 @@ export const suffolkMenta: Place = {
 
   councilAssets: [
     {
-      title: "Menta channels &amp; alumni network",
+      title: "Menta channels & alumni network",
       body: "30 years of founder-support reach: alumni, current cohorts, partner network, social channels, mailing list. The single largest founder-reach asset in Suffolk.",
     },
     {
@@ -458,7 +458,7 @@ export const suffolkMenta: Place = {
       body: "Reach the rural and coastal communities no digital channel touches.",
     },
     {
-      title: "Council noticeboards &amp; civic spaces",
+      title: "Council noticeboards & civic spaces",
       body: "Endeavour House, town halls across the county, libraries, community spaces.",
     },
     {
@@ -466,15 +466,15 @@ export const suffolkMenta: Place = {
       body: "Warm relationships with the BIDs, town councils, faith groups, NFU, Adastral, the universities, and resident associations.",
     },
     {
-      title: "Press &amp; local media",
+      title: "Press & local media",
       body: "East Anglian Daily Times, BBC Radio Suffolk, ITV Anglia, Suffolk News. A council-and-Menta-endorsed launch makes the story write itself.",
     },
     {
-      title: "Civic events &amp; county moments",
+      title: "Civic events & county moments",
       body: "Suffolk Show, the New Anglia LEP business conference, Menta's annual showcase. Each becomes a touchpoint.",
     },
     {
-      title: "Venues &amp; physical hosting",
+      title: "Venues & physical hosting",
       body: "Steers on which Menta and SCC venues across the county can host kick-offs, graduations, clinics and the summer festival.",
     },
   ],
@@ -485,7 +485,7 @@ export const suffolkMenta: Place = {
     "Suffolk's district and borough councils",
     "BT Adastral Park",
     "the New Anglia LEP",
-    "the University of Suffolk &amp; Suffolk New College",
+    "the University of Suffolk & Suffolk New College",
     "the NFU",
     "Age UK Suffolk",
     "coastal community trusts",
@@ -556,7 +556,19 @@ export const suffolkMenta: Place = {
     },
   ],
 
+  manager: {
+    name: "Hugo", // TODO: replace with local Suffolk/Menta manager name when assigned
+    emailAlias: "hugo+suffolkmentaai@ainightschool.org",
+  },
+
+  externalLinks: {
+    aiFellowship: "https://www.ainightschool.org/ai-leaders-fellowship", // TODO: confirm canonical URL
+    summerOfAi: "https://www.startupsherpas.co.uk/summer-of-ai-suffolk", // TODO: confirm Sherpas has a Suffolk page
+  },
+
+  localSpeakers: [], // TODO: add named Suffolk/Menta speakers; empty hides the section
+
   contact: {
-    email: "hugo+suffolk-ai@pdubs.co",
+    email: "hugo+suffolkmentaai@ainightschool.org",
   },
 };

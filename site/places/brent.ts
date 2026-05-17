@@ -588,7 +588,19 @@ export const brent: Place = {
     },
   ],
 
+  manager: {
+    name: "Hugo", // TODO: replace with local Brent manager name when assigned
+    emailAlias: "hugo+brentai@ainightschool.org",
+  },
+
+  externalLinks: {
+    aiFellowship: "https://www.ainightschool.org/ai-leaders-fellowship", // TODO: confirm canonical URL
+    summerOfAi: "https://www.startupsherpas.co.uk/summer-of-ai-brent", // TODO: confirm Sherpas has a Brent-specific page
+  },
+
+  localSpeakers: [], // TODO: add named Brent speakers; empty hides the section
+
   contact: {
-    email: "hugo+brent-ai@pdubs.co",
+    email: "hugo+brentai@ainightschool.org",
   },
 };

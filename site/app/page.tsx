@@ -211,7 +211,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="mt-10">
-            <PriorityChooser items={place.priorityItems} contactEmail={place.contact.email} wordmark={place.wordmark} placeName={place.name} placeNoun={place.placeNoun} />
+            <PriorityChooser items={place.priorityItems} contactEmail={place.manager.emailAlias} wordmark={place.wordmark} placeName={place.name} placeNoun={place.placeNoun} aiName={`${place.name} AI`} />
           </div>
         </div>
       </Section>

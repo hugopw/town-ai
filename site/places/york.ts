@@ -34,7 +34,7 @@ export const york: Place = {
       "JORVIK Viking Festival",
       "York Ice Trail",
       "York Food and Drink Festival",
-      "St Nicholas Fair &amp; Christmas Markets",
+      "St Nicholas Fair & Christmas Markets",
       "York Pride",
       "Lord Mayor's engagements",
     ],
@@ -147,7 +147,7 @@ export const york: Place = {
       {
         value: "8.5x",
         label:
-          "House-price-to-earnings ratio - the highest in Yorkshire and the Humber, against an England &amp; Wales median of 7.5x",
+          "House-price-to-earnings ratio - the highest in Yorkshire and the Humber, against an England & Wales median of 7.5x",
         source: "ONS Housing Affordability in England and Wales 2024",
       },
     ],
@@ -173,7 +173,7 @@ export const york: Place = {
       use: "Evidence partner and convening power - York's social-impact tradition put on civic-AI footing.",
     },
     {
-      name: "York Minster &amp; the Guildhall",
+      name: "York Minster & the Guildhall",
       role:
         "the city's defining civic and spiritual landmarks",
       use: "The right rooms for the moments residents will remember - graduations, summer festival, headline speakers.",
@@ -190,13 +190,13 @@ export const york: Place = {
       use: "Where AI fluency moves quickest from idea to patient impact.",
     },
     {
-      name: "Make It York &amp; the BID",
+      name: "Make It York & the BID",
       role:
         "the destination management organisation that runs Shambles Market, the St Nicholas Fair, and the city's visitor-economy convening",
       use: "Direct line to the 16,788 hospitality FTEs the programme exists to reach.",
     },
     {
-      name: "Explore York Libraries &amp; Archives",
+      name: "Explore York Libraries & Archives",
       role:
         "fifteen libraries and five reading cafes across the city, including Acomb and Tang Hall",
       use: "The community access points the programme uses to reach beyond the city centre.",
@@ -218,7 +218,7 @@ export const york: Place = {
       pitch:
         "Model real-time visitor flow on the Shambles, Stonegate and Petergate using existing footfall sensors, station data and event calendars. Show residents and visitors when crowds are about to spike, and route people gently to Fossgate, Micklegate and the Museum Gardens.",
       why: "York's medieval streets cannot safely absorb peak surges from 9.4 million annual visitors. A resident-built tool turns a chronic safety and frustration into something the city manages with eyes open.",
-      owner: "Make It York + City of York Council Transport &amp; Highways",
+      owner: "Make It York + City of York Council Transport & Highways",
       first: "See the /worked-example worked prototype.",
       href: "/worked-example",
     },
@@ -373,7 +373,7 @@ export const york: Place = {
         role: "Apply AI to the analysis and write the resident-facing summary. Own the narrative on YorkMix.",
       },
       {
-        name: "Make It York &amp; council officers",
+        name: "Make It York & council officers",
         role: "Validate the assumptions, share what data can be shared, and decide the safety thresholds the alert system uses.",
       },
       {
@@ -424,19 +424,19 @@ export const york: Place = {
   residentOffer: {
     speakerSeries: [
       {
-        name: "Hospitality &amp; visitor economy",
+        name: "Hospitality & visitor economy",
         topic: "AI for restaurants, hotels and independent retail",
         blurb:
           "A practitioner's session on the AI moves that actually shift the needle for an independent operator on Fossgate, Stonegate or the Shambles - bookings, pricing, reviews, social.",
       },
       {
-        name: "Rail &amp; engineering",
+        name: "Rail & engineering",
         topic: "AI in rail and engineering - what's already deployed",
         blurb:
           "An honest tour of where AI sits today across Network Rail, LNER, and the supplier base around the National Railway Museum - and what that means for York's 5,500 rail-sector workers and the next generation of apprentices.",
       },
       {
-        name: "Charities &amp; social research",
+        name: "Charities & social research",
         topic: "AI for the voluntary sector",
         blurb:
           "Drawing on the Joseph Rowntree Foundation's evidence tradition, a session on how small charities use AI to give staff a week of their month back - without compromising the care.",
@@ -468,11 +468,11 @@ export const york: Place = {
       body: "Inclusion in the council's regular resident bulletins, e-newsletters and any opt-in lists you maintain. Each programme phase gets its own dedicated send.",
     },
     {
-      title: "Direct mail &amp; letterbox drops",
+      title: "Direct mail & letterbox drops",
       body: "Reach the residents in Tang Hall, Acomb, Clifton and Westfield that no digital channel touches. Even a single city-wide drop introducing the resident offer transforms the programme's starting line.",
     },
     {
-      title: "Council noticeboards &amp; civic spaces",
+      title: "Council noticeboards & civic spaces",
       body: "West Offices, the Guildhall, the fifteen Explore York libraries, Spark:York. The places residents already trust for what's on in the city.",
     },
     {
@@ -480,19 +480,19 @@ export const york: Place = {
       body: "The council's warm relationships with the University of York, York St John, JRF, Make It York, York CVS, the BID, Explore York, faith groups, and resident associations.",
     },
     {
-      title: "Press &amp; local media",
+      title: "Press & local media",
       body: "The Press, YorkMix, BBC Radio York, Minster FM and the Yorkshire Post. A council-endorsed launch makes the press story write itself - and YorkMix will run a human-interest first.",
     },
     {
-      title: "Council meetings &amp; agendas",
+      title: "Council meetings & agendas",
       body: "A regular York.AI standing item gives residents a visible signal that this is real, sustained civic work - not a one-off announcement.",
     },
     {
-      title: "Civic events &amp; city moments",
+      title: "Civic events & city moments",
       body: "JORVIK Viking Festival, the Ice Trail, the Food and Drink Festival, the St Nicholas Fair, York Pride, and the Lord Mayor's engagements. Each becomes a touchpoint for residents to encounter the programme in person.",
     },
     {
-      title: "Venues &amp; physical hosting",
+      title: "Venues & physical hosting",
       body: "Steers on which council-controlled or council-friendly venues - the Guildhall, Theatre Royal, Explore York libraries, Spark:York - host the cohort kick-offs, graduations, clinics and the summer festival.",
     },
   ],
@@ -504,7 +504,7 @@ export const york: Place = {
     "Make It York",
     "York CVS",
     "York and Scarborough Teaching Hospitals NHS Trust",
-    "Explore York Libraries &amp; Archives",
+    "Explore York Libraries & Archives",
     "National Railway Museum",
     "York and North Yorkshire Combined Authority",
     "York Civic Trust",
@@ -578,7 +578,19 @@ export const york: Place = {
     },
   ],
 
+  manager: {
+    name: "Hugo", // TODO: replace with local York manager name when assigned
+    emailAlias: "hugo+yorkai@ainightschool.org",
+  },
+
+  externalLinks: {
+    aiFellowship: "https://www.ainightschool.org/ai-leaders-fellowship", // TODO: confirm canonical URL
+    summerOfAi: "https://www.startupsherpas.co.uk/summer-of-ai-york", // TODO: confirm Sherpas has a York-specific page
+  },
+
+  localSpeakers: [], // TODO: add named York speakers; empty hides the section
+
   contact: {
-    email: "hugo+york-ai@pdubs.co",
+    email: "hugo+yorkai@ainightschool.org",
   },
 };

@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Section } from "@/components/Section";
 import { Eyebrow } from "@/components/Eyebrow";
-import { Llama } from "@/components/Llama";
 import { SherpasMark } from "@/components/SherpasMark";
-import { SignupForm } from "@/components/SignupForm";
 import { VideoCard } from "@/components/VideoCard";
 import { videoByTheme } from "@/lib/videos";
 import { getPlace } from "@/lib/place";
@@ -19,51 +16,57 @@ export function generateMetadata(): Metadata {
 
 export default function TeenPage() {
   const place = getPlace();
-  const schoolHint = place.personaPages.teenSchoolExamples
-    .slice(0, 2)
-    .join(", ") + ", etc.";
   return (
     <>
-      {/* HERO - Sherpas register */}
-      <section className="relative overflow-hidden">
-        <div className="bg-sherpas-gradient">
-          <div className="container-page grid gap-10 pb-20 pt-16 md:grid-cols-[1.2fr_0.8fr] md:items-center md:pb-28 md:pt-24">
-            <div className="text-white">
-              <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-white">
-                For 14-18
-              </span>
-              <h1 className="display-xl mt-6 text-balance">
-                Get paid to bring your ideas to life.
-              </h1>
-              <p className="mt-6 max-w-2xl text-lg text-white/90 md:text-xl">
-                Sherpas AI - {place.name} edition. You build real AI
-                tools for real {place.name} organisations. You get paid.
-                You meet other teens who are doing the same. And you
-                walk into any uni or job interview with a portfolio
-                most adults haven&rsquo;t got.
-              </p>
-              <div className="mt-8 flex flex-wrap items-center gap-3">
-                <Link href="#signup" className="btn-sherpas">
-                  Sign me up.
-                </Link>
-                <a
-                  href="https://www.startupsherpas.co.uk"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-full border border-white/30 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/20"
-                >
-                  See what Sherpas does
-                </a>
-              </div>
+      {/* HERO - Sherpas register, sunset bg + llama hero asset */}
+      <section
+        className="relative overflow-hidden bg-cover bg-center"
+        style={{ backgroundImage: "url('/sherpas/desert-sunset.avif')" }}
+      >
+        <div className="absolute inset-0 bg-sherpas-gradient/85 mix-blend-multiply" />
+        <div className="container-page relative grid gap-10 pb-20 pt-16 md:grid-cols-[1.2fr_0.8fr] md:items-center md:pb-28 md:pt-24">
+          <div className="text-white">
+            <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-white">
+              For 14-18
+            </span>
+            <h1 className="display-xl mt-6 text-balance">
+              Get paid to bring your ideas to life.
+            </h1>
+            <p className="mt-6 max-w-2xl text-lg text-white/90 md:text-xl">
+              Sherpas AI - {place.name} edition. You build real AI
+              tools for real {place.name} organisations. You get paid.
+              You meet other teens who are doing the same. And you
+              walk into any uni or job interview with a portfolio
+              most adults haven&rsquo;t got.
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <a
+                href={place.externalLinks.summerOfAi}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-sherpas"
+              >
+                Sign me up on Sherpas
+              </a>
+              <a
+                href="https://www.startupsherpas.co.uk"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full border border-white/30 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/20"
+              >
+                See what Sherpas does
+              </a>
             </div>
-            <div className="relative flex items-end justify-center md:justify-end">
-              <div className="absolute -top-10 right-0 hidden md:block">
-                <SherpasMark variant="white" className="h-12 opacity-95" />
-              </div>
-              <div className="-mb-12">
-                <Llama size={320} />
-              </div>
+          </div>
+          <div className="relative flex items-end justify-center md:justify-end">
+            <div className="absolute -top-10 right-0 hidden md:block">
+              <SherpasMark variant="white" className="h-12 opacity-95" />
             </div>
+            <img
+              src="/sherpas/llamas.png"
+              alt="Sherpas AI llamas"
+              className="-mb-12 h-auto w-72 select-none md:w-80"
+            />
           </div>
         </div>
       </section>
@@ -139,64 +142,34 @@ export default function TeenPage() {
         </div>
       </Section>
 
-      {/* SIGNUP */}
-      <section id="signup" className="bg-midnight py-20 md:py-24">
-        <div className="container-page grid gap-12 md:grid-cols-[1fr_1fr] md:gap-16">
-          <div className="text-chalk">
-            <span className="pill-lime">Sign up</span>
-            <h2 className="display-md mt-3 text-balance">
-              Two minutes. Then we&rsquo;ll send you the next cohort
-              date.
-            </h2>
-            <p className="mt-5 text-chalk/85">
-              If you&rsquo;re under 18 we&rsquo;ll also send a quick
-              note to a parent or guardian, just so they know
-              you&rsquo;re joining. That&rsquo;s it.
-            </p>
-            <p className="mt-3 text-sm text-chalk/65">
-              No spam. No sales calls. Just the things you actually
-              asked for.
-            </p>
+      {/* CLOSING CTA - hand off to Sherpas */}
+      <section
+        id="signup"
+        className="relative overflow-hidden bg-cover bg-center py-20 md:py-24"
+        style={{ backgroundImage: "url('/sherpas/desert-sunset.avif')" }}
+      >
+        <div className="absolute inset-0 bg-sherpas-gradient/90 mix-blend-multiply" />
+        <div className="container-narrow relative text-center text-white">
+          <SherpasMark variant="white" className="mx-auto h-12 opacity-95" />
+          <h2 className="display-md mt-6 text-balance text-white">
+            Sign up on the Sherpas site. Two minutes. Then we send you the
+            next {place.name} cohort dates.
+          </h2>
+          <p className="mt-5 text-white/85">
+            If you&rsquo;re under 18, Sherpas will send a quick note to a
+            parent or guardian so they know you&rsquo;re joining. No
+            spam, no sales calls.
+          </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <a
+              href={place.externalLinks.summerOfAi}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-sherpas"
+            >
+              Sign me up on Sherpas
+            </a>
           </div>
-          <SignupForm
-            persona="teen"
-            tone="teen"
-            source="/im-a-teen"
-            defaultTags={["teen", "sherpas-ai", place.slug]}
-            fields={[
-              {
-                name: "age",
-                label: "Your age",
-                placeholder: "14-18",
-              },
-              {
-                name: "school",
-                label: "School (optional)",
-                placeholder: schoolHint,
-              },
-              {
-                name: "interest",
-                label: "Which one are you most interested in?",
-                type: "select",
-                required: true,
-                options: [
-                  { value: "summer-cohort", label: "Summer cohort" },
-                  { value: "year-round", label: "Year-round community" },
-                  { value: "work-experience", label: "Work experience" },
-                  { value: "all", label: "All of the above" },
-                ],
-              },
-              {
-                name: "parentEmail",
-                label: "Parent / guardian email (if you're under 18)",
-                type: "email",
-                placeholder: "parent@example.com",
-              },
-            ]}
-            cta="I'm in."
-            successHeadline="You&rsquo;re in. Welcome to Sherpas."
-            successBody={`Look out for a note from the team with the next ${place.name} cohort dates. If you gave us a parent email, they'll get a friendly heads-up too.`}
-          />
         </div>
       </section>
     </>

@@ -84,7 +84,7 @@ export const harpenden: Place = {
         value: "60.5%",
         label:
           "Working-age residents with a degree, vs 29.8% peer-group average",
-        source: "ONS Towns &amp; Cities 2021",
+        source: "ONS Towns & Cities 2021",
       },
       {
         value: "2.6M",
@@ -118,13 +118,13 @@ export const harpenden: Place = {
         value: "~49%",
         label:
           "In professional / managerial occupations - vs 33% nationally",
-        source: "ONS Census 2021, Harpenden North &amp; South wards",
+        source: "ONS Census 2021, Harpenden North & South wards",
       },
       {
         value: "60.5%",
         label:
           "Working-age residents with a degree, vs 29.8% peer-group average",
-        source: "ONS Towns &amp; Cities 2021",
+        source: "ONS Towns & Cities 2021",
       },
       {
         value: "2.64M",
@@ -153,12 +153,12 @@ export const harpenden: Place = {
       use: "For older residents and parents.",
     },
     {
-      name: "The Common &amp; Rothamsted Park",
+      name: "The Common & Rothamsted Park",
       role: "our civic front room",
       use: "And the right place for a summer festival.",
     },
     {
-      name: "St Nicholas &amp; Harpenden Methodist",
+      name: "St Nicholas & Harpenden Methodist",
       role:
         "halls and pastoral networks that reach residents digital channels miss",
       use: "",
@@ -169,19 +169,19 @@ export const harpenden: Place = {
       use: "",
     },
     {
-      name: "Harpenden BID &amp; the High Street",
+      name: "Harpenden BID & the High Street",
       role:
         "the independents whose livelihoods can be protected with an hour of AI coaching",
       use: "",
     },
     {
-      name: "Harpenden Town Council &amp; the Town Hall",
+      name: "Harpenden Town Council & the Town Hall",
       role:
         "the convening power that turns this from a nice idea into a funded, visible, civic programme",
       use: "",
     },
     {
-      name: "Harpenden Facebook groups &amp; The Herts Ad",
+      name: "Harpenden Facebook groups & The Herts Ad",
       role: "where residents actually find out what's going on",
       use: "",
     },
@@ -448,11 +448,11 @@ export const harpenden: Place = {
       body: "Inclusion in the council's regular resident bulletins, e-newsletters and any opt-in lists you maintain. Each programme phase gets its own dedicated send.",
     },
     {
-      title: "Direct mail &amp; letterbox drops",
+      title: "Direct mail & letterbox drops",
       body: "Reach the residents that no digital channel touches. Even a single town-wide drop introducing the resident offer transforms the programme's starting line.",
     },
     {
-      title: "Council noticeboards &amp; civic spaces",
+      title: "Council noticeboards & civic spaces",
       body: "Town Hall, Public Halls, library noticeboards, The Eric Morecambe Centre. The places residents already trust for what's on in town.",
     },
     {
@@ -460,19 +460,19 @@ export const harpenden: Place = {
       body: "The council's warm relationships with Rothamsted, the Secondary Schools Trust, Age UK Herts, the Leisure Centre, the BID, faith groups, and resident associations.",
     },
     {
-      title: "Press &amp; local media",
+      title: "Press & local media",
       body: "The Herts Ad, Harpenden Life magazine, Harpenden Connect, BBC Three Counties. A council-endorsed launch makes the press story write itself.",
     },
     {
-      title: "Council meetings &amp; agendas",
+      title: "Council meetings & agendas",
       body: "A regular Harpenden.AI standing item gives residents a visible signal that this is real, sustained civic work - not a one-off announcement.",
     },
     {
-      title: "Civic events &amp; town moments",
+      title: "Civic events & town moments",
       body: "Carnival, Christmas lights switch-on, summer events, Mayor's engagements. Each becomes a touchpoint for residents to encounter the programme in person.",
     },
     {
-      title: "Venues &amp; physical hosting",
+      title: "Venues & physical hosting",
       body: "Steers on which council-controlled or council-friendly venues can host the cohort kick-offs, graduations, clinics and the summer festival.",
     },
   ],
@@ -552,7 +552,19 @@ export const harpenden: Place = {
     },
   ],
 
+  manager: {
+    name: "Hugo", // TODO: replace with local Harpenden manager name when assigned
+    emailAlias: "hugo+harpendenai@ainightschool.org",
+  },
+
+  externalLinks: {
+    aiFellowship: "https://www.ainightschool.org/ai-leaders-fellowship", // TODO: confirm canonical URL
+    summerOfAi: "https://www.startupsherpas.co.uk/summer-of-ai-harpenden",
+  },
+
+  localSpeakers: [], // TODO: add named Harpenden speakers; empty hides the section
+
   contact: {
-    email: "hugo+harpenden-ai@pdubs.co",
+    email: "hugo+harpendenai@ainightschool.org",
   },
 };

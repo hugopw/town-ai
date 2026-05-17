@@ -11,6 +11,7 @@ export function PriorityChooser({
   wordmark,
   placeName,
   placeNoun = "town",
+  aiName,
 }: {
   items: PriorityItem[];
   contactEmail: string;
@@ -19,6 +20,8 @@ export function PriorityChooser({
   placeName?: string;
   /** Singular noun for the place ("town", "city", "district"). */
   placeNoun?: string;
+  /** Product name, e.g. "York AI". Defaults to wordmark with the dot stripped. */
+  aiName?: string;
 }) {
   const [items, setItems] = useState<PriorityItem[]>(initial);
   const initialIds = useMemo(
@@ -116,7 +119,7 @@ export function PriorityChooser({
 
       <div className="mt-8 flex flex-wrap items-center gap-4">
         <a href={shareMailto()} className="btn-primary">
-          Email my priorities to Hugo
+          Email my priorities to {aiName ?? wordmark.replace(/\.AI$/i, " AI")}
         </a>
         <button type="button" onClick={reset} className="btn-ghost">
           Reset order

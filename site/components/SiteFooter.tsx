@@ -9,7 +9,7 @@ export function SiteFooter() {
   return (
     <footer className="mt-32 border-t border-ink/10 bg-ink text-chalk">
       <div className="container-page py-16">
-        <div className="grid gap-12 md:grid-cols-4">
+        <div className="grid gap-12 md:grid-cols-5">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2">
               <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-sun text-ink">
@@ -46,6 +46,22 @@ export function SiteFooter() {
               <li><Link href="/journey">The journey</Link></li>
               <li><Link href="/council">For the {place.council.type} council</Link></li>
               <li><Link href="/worked-example">Worked example - {place.workedExample.shortLabel}</Link></li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wider text-chalk/60">
+              For your community
+            </p>
+            <ul className="mt-4 space-y-2 text-chalk/80">
+              <li><Link href="/schools">Schools</Link></li>
+              <li><Link href="/sports-clubs">Sports clubs</Link></li>
+              <li><Link href="/high-street">High street businesses</Link></li>
+              <li><Link href="/publicans">Pub landlords</Link></li>
+              <li><Link href="/voluntary-sector">Voluntary sector</Link></li>
+              <li><Link href="/faith">Faith organisations</Link></li>
+              <li><Link href="/ai-community-impact">AI for community impact</Link></li>
+              <li><Link href="/ai-creatives">AI for creatives</Link></li>
+              <li><Link href="/ai-parents">{place.welcome?.parentsCardLabel ?? "AI for Parents"}</Link></li>
             </ul>
           </div>
           <div>

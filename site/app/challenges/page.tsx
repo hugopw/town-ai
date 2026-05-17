@@ -38,10 +38,11 @@ export default function ChallengesPage() {
         <div className="container-page">
           <PriorityChooser
             items={place.priorityItems}
-            contactEmail={place.contact.email}
+            contactEmail={place.manager.emailAlias}
             wordmark={place.wordmark}
             placeName={place.name}
             placeNoun={place.placeNoun}
+            aiName={`${place.name} AI`}
           />
         </div>
       </Section>

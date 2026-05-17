@@ -69,6 +69,7 @@ export function SignupForm({
   successBody = "We’ll be in touch with the next step shortly.",
 }: SignupFormProps) {
   const place = getPlace();
+  const managerName = place.manager.name;
   const t = toneClasses[tone];
   const [submitted, setSubmitted] = useState<Signup | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -107,14 +108,14 @@ export function SignupForm({
           marketing: consentMarketing,
           partnerSharing: consentPartner,
         },
-        tags: ["harpenden", "demo", ...defaultTags],
+        tags: [place.slug, "demo", ...defaultTags],
         ...extras,
       } as Parameters<typeof localStore.addSignup>[0]);
 
       setSubmitted(result);
       form.reset();
     } catch (err) {
-      setError("Sorry - something went wrong. Try again, or email Hugo.");
+      setError(`Sorry - something went wrong. Try again, or email ${managerName}.`);
     } finally {
       setBusy(false);
     }

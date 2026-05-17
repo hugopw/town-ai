@@ -102,6 +102,40 @@ export type Speaker = {
   blurb: string;
 };
 
+/**
+ * A locally-recognised speaker who hosts or contributes to a session
+ * in this tenant. Distinct from `Speaker` above (which is the
+ * speaker-series shape on the resident offer page).
+ */
+export type LocalSpeaker = {
+  name: string;
+  role: string;
+  bio?: string;
+  /** Optional public image URL or `/public/...` path. */
+  photo?: string;
+};
+
+/**
+ * Per-tenant external links. AI Fellowship URL is typically the same
+ * across tenants; Summer of AI URL varies by tenant.
+ */
+export type ExternalLinks = {
+  /** AI Fellowship page on AI Night School. */
+  aiFellowship: string;
+  /** Sherpas Summer of AI URL for this tenant. */
+  summerOfAi: string;
+};
+
+/**
+ * The human managing this town's site - shown on every "Email …"
+ * CTA. Default `name` is "Hugo" until a local manager is assigned.
+ */
+export type Manager = {
+  name: string;
+  /** Full mailto target, e.g. "hugo+yorkai@ainightschool.org". */
+  emailAlias: string;
+};
+
 // ---------------------------------------------------------------------
 // Top-level Place
 // ---------------------------------------------------------------------
@@ -282,6 +316,26 @@ export type Place = {
   seedProblems: SeedProblem[];
 
   // -----------------------------------------------------------------
+  // Per-tenant management + external links + speakers
+  // -----------------------------------------------------------------
+  /** The human managing this town's site. Defaults `name` to "Hugo" if absent. */
+  manager: Manager;
+  /** External AI Fellowship + Sherpas Summer of AI URLs. */
+  externalLinks: ExternalLinks;
+  /**
+   * Local speakers hosted by this tenant. If empty, the speakers
+   * section is hidden on the tenant.
+   */
+  localSpeakers: LocalSpeaker[];
+  /**
+   * Override the /welcome card label for the parents/older-residents
+   * card. Defaults to "AI for Parents".
+   */
+  welcome?: {
+    parentsCardLabel?: string;
+  };
+
+  // -----------------------------------------------------------------
   // Optional brand override
   // -----------------------------------------------------------------
   brand?: {
@@ -297,7 +351,7 @@ export type Place = {
   // Contact
   // -----------------------------------------------------------------
   contact: {
-    /** mailto target for "email Hugo" CTAs, with subject pre-filled per place. */
+    /** Legacy mailto target. Prefer `manager.emailAlias` for all new CTAs. */
     email: string;
     /** Optional council-meeting-booking URL (calendar / typeform). */
     bookingUrl?: string;

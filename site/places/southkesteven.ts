@@ -122,13 +122,13 @@ export const southkesteven: Place = {
       {
         value: "~10%",
         label:
-          "Of jobs in agriculture, forestry &amp; fishing - 4x the national average",
+          "Of jobs in agriculture, forestry & fishing - 4x the national average",
         source: "ONS Business Register (TBC)",
       },
       {
         value: "~30%",
         label: "Working-age residents with a degree (TBC)",
-        source: "ONS Towns &amp; Cities 2021 (estimate, to confirm)",
+        source: "ONS Towns & Cities 2021 (estimate, to confirm)",
       },
       {
         value: "30 min",
@@ -159,12 +159,12 @@ export const southkesteven: Place = {
       use: "A natural host for the residents-only speaker series.",
     },
     {
-      name: "Bourne &amp; the Deepings",
+      name: "Bourne & the Deepings",
       role: "the district's smaller market towns and rural service hubs",
       use: "Where rural-AI clinics matter most.",
     },
     {
-      name: "Burghley House &amp; Belton House",
+      name: "Burghley House & Belton House",
       role: "two of the country's most significant heritage estates",
       use: "Civic pride; potential venue partners for festival moments.",
     },
@@ -174,17 +174,17 @@ export const southkesteven: Place = {
       use: "Potential partner for skills, mentoring, and family programmes.",
     },
     {
-      name: "Bakkavor &amp; the food sector",
+      name: "Bakkavor & the food sector",
       role: "Lincolnshire's outsized food-manufacturing footprint",
       use: "AI for workforce, logistics and scheduling - real local relevance.",
     },
     {
-      name: "Lincolnshire Co-op &amp; the BID partnerships",
+      name: "Lincolnshire Co-op & the BID partnerships",
       role: "the trusted retail and town-centre infrastructure",
       use: "Working partner for high-street-AI projects.",
     },
     {
-      name: "Grantham Journal &amp; Stamford Mercury",
+      name: "Grantham Journal & Stamford Mercury",
       role: "where the district actually finds out what's happening",
       use: "",
     },
@@ -425,7 +425,7 @@ export const southkesteven: Place = {
       {
         name: "Rolling roster",
         topic:
-          "Guest speakers from Hugo's network, with rural &amp; food-sector practitioners on the rotation",
+          "Guest speakers from Hugo's network, with rural & food-sector practitioners on the rotation",
         blurb:
           "Hugo brings one headline speaker a month - exclusively for South Kesteven residents, in a South Kesteven room.",
       },
@@ -453,7 +453,7 @@ export const southkesteven: Place = {
       body: "Reach the rural villages and households no digital channel touches. Even one district-wide drop introducing the resident offer transforms the programme's starting line.",
     },
     {
-      title: "Council noticeboards &amp; civic spaces",
+      title: "Council noticeboards & civic spaces",
       body: "Council offices, town halls, libraries, leisure centres. The places residents already trust for what's happening locally.",
     },
     {
@@ -461,19 +461,19 @@ export const southkesteven: Place = {
       body: "The council's warm relationships with the BIDs, town councils, faith groups, NFU contacts, RAF Wittering, and resident associations.",
     },
     {
-      title: "Press &amp; local media",
+      title: "Press & local media",
       body: "Grantham Journal, Stamford Mercury, BBC Radio Lincolnshire, Lincolnshire Live. A council-endorsed launch makes the press story write itself.",
     },
     {
-      title: "Council meetings &amp; agendas",
+      title: "Council meetings & agendas",
       body: "A regular SouthKesteven.AI standing item gives residents a visible signal that this is real, sustained civic work - not a one-off announcement.",
     },
     {
-      title: "Civic events &amp; town moments",
+      title: "Civic events & town moments",
       body: "Grantham Carnival, Stamford Mid-Lent Fair, Bourne Christmas lights switch-on, Chair of Council civic engagements. Each becomes a touchpoint.",
     },
     {
-      title: "Venues &amp; physical hosting",
+      title: "Venues & physical hosting",
       body: "Steers on which council-friendly venues across the four towns can host kick-offs, graduations, clinics and the summer festival.",
     },
   ],
@@ -555,7 +555,19 @@ export const southkesteven: Place = {
     },
   ],
 
+  manager: {
+    name: "Hugo", // TODO: replace with local South Kesteven manager name when assigned
+    emailAlias: "hugo+southkestevenai@ainightschool.org",
+  },
+
+  externalLinks: {
+    aiFellowship: "https://www.ainightschool.org/ai-leaders-fellowship", // TODO: confirm canonical URL
+    summerOfAi: "https://www.startupsherpas.co.uk/summer-of-ai-south-kesteven", // TODO: confirm Sherpas has a South Kesteven page
+  },
+
+  localSpeakers: [], // TODO: add named South Kesteven speakers; empty hides the section
+
   contact: {
-    email: "hugo+southkesteven-ai@pdubs.co",
+    email: "hugo+southkestevenai@ainightschool.org",
   },
 };

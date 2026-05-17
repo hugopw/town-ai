@@ -80,14 +80,11 @@ export default function ResidentOfferPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href={`mailto:${place.contact.email}?subject=${registerSubject}`}
+              href={`mailto:${place.manager.emailAlias}?subject=${registerSubject}`}
               className="btn-primary"
             >
               Register interest
             </a>
-            <Link href="/free-dreamers" className="btn-ghost">
-              The Free Dreamers
-            </Link>
           </div>
         </div>
       </Section>
@@ -227,14 +224,11 @@ export default function ResidentOfferPage() {
           </h2>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a
-              href={`mailto:${place.contact.email}?subject=${registerInterestSubject}`}
+              href={`mailto:${place.manager.emailAlias}?subject=${registerInterestSubject}`}
               className="btn-primary"
             >
-              Email Hugo
+              Register interest
             </a>
-            <Link href="/challenges" className="btn-ghost">
-              Pick a challenge to work on
-            </Link>
           </div>
         </div>
       </Section>

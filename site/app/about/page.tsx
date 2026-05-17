@@ -87,10 +87,10 @@ export default function AboutPage() {
             with an email.
           </p>
           <a
-            href={`mailto:${place.contact.email}?subject=${encodeURIComponent(place.wordmark)}`}
+            href={`mailto:${place.manager.emailAlias}?subject=${encodeURIComponent(place.wordmark)}`}
             className="mt-8 btn-primary inline-flex bg-sun text-ink hover:bg-sun-warm hover:text-chalk"
           >
-            {place.contact.email}
+            {place.manager.emailAlias}
           </a>
           <p className="mt-10 text-sm text-chalk/50">
             &copy; {new Date().getFullYear()} Hugo Pickford-Wardle. {place.wordmark}

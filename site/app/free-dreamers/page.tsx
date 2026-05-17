@@ -107,7 +107,7 @@ export default function FreeDreamersPage() {
           </ul>
           <div className="mt-10 flex flex-wrap gap-3">
             <a
-              href={`mailto:${place.contact.email}?subject=${encodeURIComponent("Free Dreamers interest")}`}
+              href={`mailto:${place.manager.emailAlias}?subject=${encodeURIComponent("Free Dreamers interest")}`}
               className="btn-primary bg-sun text-ink hover:bg-sun-warm hover:text-chalk"
             >
               Ask about joining

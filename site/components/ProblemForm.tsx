@@ -55,7 +55,7 @@ export function ProblemForm() {
       });
       setSubmitted(next);
     } catch {
-      setError("Something went wrong. Try again, or email Hugo.");
+      setError(`Something went wrong. Try again, or email ${place.manager.name}.`);
     } finally {
       setBusy(false);
     }

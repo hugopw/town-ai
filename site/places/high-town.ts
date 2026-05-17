@@ -164,7 +164,7 @@ export const highTown: Place = {
       use: "Where Sherpas AI cohorts meet the people moving in.",
     },
     {
-      name: "Luton Foodbank &amp; community pantries",
+      name: "Luton Foodbank & community pantries",
       role: "the front line for High Town's food insecurity",
       use: "First call for AI tools that help match donations to need at scale.",
     },
@@ -174,17 +174,17 @@ export const highTown: Place = {
       use: "Where in-person AI clinics need to live - not at the Hat Factory.",
     },
     {
-      name: "Cardinal Newman, Denbigh High &amp; Lea Manor",
+      name: "Cardinal Newman, Denbigh High & Lea Manor",
       role: "the secondary schools serving High Town families",
       use: "Sherpas AI cohorts; family AI nights; teen AI Coaches.",
     },
     {
-      name: "Luton Borough Council &amp; the Town Hall",
+      name: "Luton Borough Council & the Town Hall",
       role: "the unitary authority for one of the youngest, most-diverse and most-deprived towns outside London",
       use: "The convening power that makes High Town more than a neighbourhood-only project.",
     },
     {
-      name: "Luton News &amp; BBC Three Counties",
+      name: "Luton News & BBC Three Counties",
       role: "where Luton actually gets its news",
       use: "The press story writes itself when both High Towns show up in the same room.",
     },
@@ -455,7 +455,7 @@ export const highTown: Place = {
       body: "Reach the residents that no digital channel touches. In a ward this diverse and this multilingual, a printed flyer in three languages does work nothing else can do.",
     },
     {
-      title: "Council noticeboards &amp; civic spaces",
+      title: "Council noticeboards & civic spaces",
       body: "Town Hall, Central Library, community centres. The places residents already trust for what's going on locally.",
     },
     {
@@ -463,28 +463,28 @@ export const highTown: Place = {
       body: "The council's relationships with mosques, churches, community centres, refugee charities, the Hat Factory and Culture Trust - the relationships paid marketing can't replicate.",
     },
     {
-      title: "Press &amp; local media",
+      title: "Press & local media",
       body: "Luton News, Luton on Sunday, BBC Three Counties, Luton Today. Plus community-language press where it exists.",
     },
     {
-      title: "Council meetings &amp; agendas",
+      title: "Council meetings & agendas",
       body: "A regular HighTown.AI standing item gives residents a visible signal that this is real, sustained civic work - not a one-off announcement.",
     },
     {
-      title: "Civic events &amp; town moments",
+      title: "Civic events & town moments",
       body: "Luton Carnival, the Mela, Mayor of Luton civic engagements, the Bedfordshire Year of Culture. Each becomes a touchpoint where residents encounter the programme in person.",
     },
     {
-      title: "Venues &amp; physical hosting",
+      title: "Venues & physical hosting",
       body: "Steers on which council-controlled or council-friendly venues across High Town can host kick-offs, graduations, multilingual clinics and the festival.",
     },
   ],
 
   councilPartners: [
     "Culture Trust Luton (the Hat Factory, Hat House, Hat Works tenants)",
-    "Luton Foodbank (incl. the Hightown Community Sports &amp; Arts Centre distribution)",
+    "Luton Foodbank (incl. the Hightown Community Sports & Arts Centre distribution)",
     "Luton All Women's Centre",
-    "All Saints Asylum Seeker &amp; Refugee Support Project",
+    "All Saints Asylum Seeker & Refugee Support Project",
     "Luton City of Sanctuary network",
     "Luton Council of Mosques",
     "St Matthew's Church and High Town Methodist Church",
@@ -527,13 +527,13 @@ export const highTown: Place = {
 
   seedProblems: [
     {
-      organisation: "Luton Foodbank - Hightown Community Sports &amp; Arts Centre",
+      organisation: "Luton Foodbank - Hightown Community Sports & Arts Centre",
       contactName: "Foodbank coordinator",
       contactEmail: "tbc@lutonfoodbank.org.uk",
       shortTitle:
         "Match donations to need in the languages our volunteers actually speak",
       description:
-        "We run our High Town distribution from the Hightown Community Sports &amp; Arts Centre on York Street, Fridays 1-3pm. Donations arrive unpredictably. The families we serve speak Urdu, Bengali, Romanian, Polish, Pashto and Tigrinya among others. Matching food to family is a manual scramble made harder by the language gap at the front desk. Could AI forecast demand, suggest fair allocations, and bridge the language gap in real time?",
+        "We run our High Town distribution from the Hightown Community Sports & Arts Centre on York Street, Fridays 1-3pm. Donations arrive unpredictably. The families we serve speak Urdu, Bengali, Romanian, Polish, Pashto and Tigrinya among others. Matching food to family is a manual scramble made harder by the language gap at the front desk. Could AI forecast demand, suggest fair allocations, and bridge the language gap in real time?",
       whoFeelsIt:
         "Volunteers at the York Street desk on Friday afternoons. The families who come on the wrong day in the wrong language. The trustees watching food go to waste while need rises (39% child poverty in our wards).",
       alreadyTried:
@@ -543,7 +543,7 @@ export const highTown: Place = {
       tags: ["food", "matching", "multilingual", "demo-seed"],
     },
     {
-      organisation: "All Saints Asylum Seeker &amp; Refugee Support Project",
+      organisation: "All Saints Asylum Seeker & Refugee Support Project",
       contactName: "Project coordinator",
       contactEmail: "tbc@allsaintsluton.org",
       shortTitle:
@@ -559,7 +559,19 @@ export const highTown: Place = {
     },
   ],
 
+  manager: {
+    name: "Hugo", // TODO: replace with local High Town manager name when assigned
+    emailAlias: "hugo+hightownai@ainightschool.org",
+  },
+
+  externalLinks: {
+    aiFellowship: "https://www.ainightschool.org/ai-leaders-fellowship", // TODO: confirm canonical URL
+    summerOfAi: "https://www.startupsherpas.co.uk/summer-of-ai-high-town", // TODO: confirm Sherpas has a High Town page
+  },
+
+  localSpeakers: [], // TODO: add named High Town speakers; empty hides the section
+
   contact: {
-    email: "hugo+hightown-ai@pdubs.co",
+    email: "hugo+hightownai@ainightschool.org",
   },
 };

@@ -63,63 +63,109 @@ export default function WelcomePage() {
       <section id="doors" className="bg-chalk py-20 md:py-24">
         <div className="container-page">
           <div className="max-w-3xl">
-            <Eyebrow tone="ink">Four doors</Eyebrow>
+            <Eyebrow tone="ink">Six doors</Eyebrow>
             <h2 className="display-md mt-3 text-balance">
               Pick whichever describes you today. You can change your
               mind later.
             </h2>
           </div>
-          <div className="mt-12 grid gap-5 md:grid-cols-2">
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             <PersonaCard
               tone="leader"
               who="For business leaders"
               title="I run, lead, or work in a serious knowledge-economy job."
-              blurb={`Get fluent in AI before your role does. ${place.name}-priced AI Night School, plus a residents-only speaker series in ${noun}.`}
-              cta="See the leader path"
-              href="/im-a-leader"
+              blurb={`Get fluent in AI before your role does. The AI Leaders Fellowship runs alongside ${place.wordmark}.`}
+              cta="See the AI Fellowship"
+              href={place.externalLinks.aiFellowship}
+              external
               decoration={<MiniHugo pose="laptop" size="fit" />}
             />
             <PersonaCard
               tone="teen"
               who="For 14-18-year-olds"
-              title="I’m a teenager and I want to build with AI, not just use it."
+              title="I'm a teenager and I want to build with AI, not just use it."
               blurb={`Sherpas AI - ${place.name} edition. Get paid to bring real ideas to life, alongside other ${place.name} teens.`}
-              cta="See the teen path"
-              href="/im-a-teen"
+              cta="See the Summer of AI"
+              href={place.externalLinks.summerOfAi}
+              external
               decoration={<Llama size={190} className="-mb-2" />}
             />
             <PersonaCard
               tone="volunteer"
               who="For volunteers"
-              title={`I’ve got time to give. I want to help my ${noun}.`}
+              title={`I've got time to give. I want to help my ${noun}.`}
               blurb={`Become an AI Coach, host a weekly clinic, or join a community working group. Your experience is exactly what your ${noun} needs.`}
               cta="See volunteer roles"
               href="/im-volunteering"
               decoration={<MiniHugo pose="thumbs-up" size="fit" />}
             />
             <PersonaCard
-              tone="organisation"
-              who="For local organisations"
-              title="Our organisation has a problem we think AI could help with."
-              blurb="Tell us a real problem your charity, school, or community group faces. We’ll match it to a working group."
-              cta="Submit a problem"
-              href="/our-organisation"
-              decoration={<MiniHugo pose="megaphone" size="fit" />}
+              tone="resident"
+              who="For residents"
+              title="AI for community impact - I want to use AI to help my neighbours."
+              blurb={`A course for residents who want to use AI in their volunteering, their advocacy, and their role in ${place.name}'s civic life.`}
+              cta="See the residents path"
+              href="/ai-community-impact"
+            />
+            <PersonaCard
+              tone="creative"
+              who="For creatives"
+              title="AI for creatives - I make things, and I want AI to make me sharper."
+              blurb="Writers, designers, musicians, photographers, performers. A practitioner's path through AI that respects the craft and adds to it."
+              cta="See AI for creatives"
+              href="/ai-creatives"
+            />
+            <PersonaCard
+              tone="parent"
+              who="For parents & older residents"
+              title={`${place.welcome?.parentsCardLabel ?? "AI for Parents"} - I want to understand what my children, my grandchildren, my pension is dealing with.`}
+              blurb="A patient, jargon-free path through AI for parents, grandparents and older residents who'd rather understand it than be told what to think."
+              cta={`See ${place.welcome?.parentsCardLabel ?? "AI for Parents"}`}
+              href="/ai-parents"
             />
           </div>
           <p className="mt-8 max-w-2xl text-sm text-midnight/65">
-            Not sure which door is yours? Start with{" "}
-            <Link href="/im-a-leader" className="underline underline-offset-4">
-              Leaders
-            </Link>{" "}
-            if you work in a knowledge-economy role, or{" "}
-            <Link href="/im-volunteering" className="underline underline-offset-4">
-              Volunteers
-            </Link>{" "}
-            if you’re retired and want to help. The doors aren’t locked.
+            Not sure which door is yours? The doors aren't locked. Pick
+            whichever feels closest and email {place.manager.name} - we'll
+            help you find the right starting point.
           </p>
         </div>
       </section>
+
+      {/* COMMUNITY SEGMENTS */}
+      <Section tone="white">
+        <div className="container-page">
+          <Eyebrow tone="ink">Or you represent a community in {place.name}</Eyebrow>
+          <h2 className="display-md mt-3 max-w-3xl text-balance">
+            We work with whole communities, not just individual residents.
+          </h2>
+          <p className="mt-5 max-w-3xl text-base text-midnight/75 md:text-lg">
+            Each of these is a dedicated page with the offer, the why,
+            and a direct line to {place.manager.name}.
+          </p>
+          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { href: "/schools", label: "Schools" },
+              { href: "/sports-clubs", label: "Sports clubs" },
+              { href: "/high-street", label: "High street businesses" },
+              { href: "/publicans", label: "Pub landlords" },
+              { href: "/voluntary-sector", label: "Voluntary sector" },
+              { href: "/faith", label: "Faith organisations" },
+            ].map((c) => (
+              <Link
+                key={c.href}
+                href={c.href}
+                className="group flex items-center justify-between rounded-2xl border border-midnight/15 bg-chalk p-5 transition hover:border-midnight/40 hover:bg-white"
+              >
+                <span className="font-display text-lg text-midnight">
+                  For {c.label.toLowerCase()}
+                </span>
+                <ArrowRight className="h-4 w-4 text-midnight/60 transition group-hover:translate-x-1 group-hover:text-midnight" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </Section>
 
       {/* PROJECTS TEASER */}
       <Section tone="white">
@@ -183,14 +229,24 @@ export default function WelcomePage() {
             neighbours already inside.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Link href="/im-a-leader" className="btn-lime">
-              I’m a leader
-            </Link>
-            <Link href="/im-a-teen" className="btn-ghost border-white/30 bg-white/10 text-chalk hover:bg-white/20">
-              I’m a teen
-            </Link>
+            <a
+              href={place.externalLinks.aiFellowship}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-lime"
+            >
+              AI Fellowship
+            </a>
+            <a
+              href={place.externalLinks.summerOfAi}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-ghost border-white/30 bg-white/10 text-chalk hover:bg-white/20"
+            >
+              Summer of AI
+            </a>
             <Link href="/im-volunteering" className="btn-ghost border-white/30 bg-white/10 text-chalk hover:bg-white/20">
-              I’m volunteering
+              Volunteer
             </Link>
             <Link href="/our-organisation" className="btn-ghost border-white/30 bg-white/10 text-chalk hover:bg-white/20">
               Our organisation

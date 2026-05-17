@@ -149,7 +149,7 @@ export default function CouncilPage() {
                   b: `Council-led intros to ${partnersList}.`,
                 },
                 {
-                  t: "Venue partnership for the festival &amp; clinics",
+                  t: "Venue partnership for the festival & clinics",
                   b: "Active help finding and securing the venues for cohort openings, graduation evenings, weekly clinics and the summer festival.",
                 },
                 {
@@ -229,7 +229,7 @@ export default function CouncilPage() {
               },
               {
                 n: "02",
-                t: "Papers &amp; minutes in plain English",
+                t: "Papers & minutes in plain English",
                 b: "An AI workflow that turns every council paper and every set of minutes into a resident-facing digest, in the council&rsquo;s voice.",
               },
               {
@@ -240,16 +240,16 @@ export default function CouncilPage() {
               {
                 n: "04",
                 t: "Community engagement that actually reaches everyone",
-                b: "Short-form explainers, Q&amp;A, translations into community languages, and proactive outreach to the three wards that never respond.",
+                b: "Short-form explainers, Q&A, translations into community languages, and proactive outreach to the three wards that never respond.",
               },
               {
                 n: "05",
-                t: "Policy drafting &amp; scenario-testing",
+                t: "Policy drafting & scenario-testing",
                 b: "Use AI to pressure-test a policy before it&rsquo;s tabled - and to surface implications the council might otherwise only learn in a public meeting.",
               },
               {
                 n: "06",
-                t: `Governance &amp; assurance`,
+                t: `Governance & assurance`,
                 b: `A pragmatic governance model suited to a ${tcType} council - who can use what, where data lives, what gets logged, what we tell residents.`,
               },
             ].map((m) => (
@@ -304,17 +304,17 @@ export default function CouncilPage() {
               Let&rsquo;s walk through this in person, this week.
             </h2>
             <p className="mt-6 text-chalk/80">
-              Thirty to forty-five minutes is plenty. Hugo will walk the
-              council through this site, field any questions, and leave
-              you with a single-page summary of the asks. No pitch
+              Thirty to forty-five minutes is plenty. {place.manager.name} will
+              walk the council through this site, field any questions, and
+              leave you with a single-page summary of the asks. No pitch
               deck. No follow-on sales process.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href={`mailto:${place.contact.email}?subject=${encodeURIComponent(`${place.wordmark} council meeting`)}&body=${encodeURIComponent(`Hugo - let's schedule 30-45 minutes this week to walk through ${place.wordmark}. Good times:`)}`}
+                href={`mailto:${place.manager.emailAlias}?subject=${encodeURIComponent(`${place.wordmark} council meeting`)}&body=${encodeURIComponent(`${place.manager.name} - let's schedule 30-45 minutes this week to walk through ${place.wordmark}. Good times:`)}`}
                 className="btn-primary bg-sun text-ink hover:bg-sun-warm hover:text-chalk"
               >
-                Email Hugo
+                Email {place.manager.name}
               </a>
               <Link href="/journey" className="btn-ghost border-white/30 bg-white/10 text-chalk hover:bg-white/20">
                 See the phased journey

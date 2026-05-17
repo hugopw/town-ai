@@ -2,7 +2,14 @@ import Link from "next/link";
 import clsx from "clsx";
 import { ArrowRight } from "lucide-react";
 
-type Tone = "leader" | "teen" | "volunteer" | "organisation";
+type Tone =
+  | "leader"
+  | "teen"
+  | "volunteer"
+  | "organisation"
+  | "resident"
+  | "creative"
+  | "parent";
 
 const toneStyles: Record<
   Tone,
@@ -47,6 +54,30 @@ const toneStyles: Record<
     pill: "bg-midnight/10 text-midnight",
     stage: "bg-chalk-warm",
   },
+  resident: {
+    bg: "bg-meadow/10 text-midnight border border-midnight/10",
+    text: "text-midnight",
+    cta: "bg-meadow",
+    ctaText: "text-midnight",
+    pill: "bg-meadow/30 text-midnight",
+    stage: "bg-meadow/15",
+  },
+  creative: {
+    bg: "bg-sun/10 text-midnight border border-midnight/10",
+    text: "text-midnight",
+    cta: "bg-sun",
+    ctaText: "text-midnight",
+    pill: "bg-sun/30 text-midnight",
+    stage: "bg-sun/15",
+  },
+  parent: {
+    bg: "bg-sky/10 text-midnight border border-midnight/10",
+    text: "text-midnight",
+    cta: "bg-sky-deep",
+    ctaText: "text-chalk",
+    pill: "bg-sky/30 text-midnight",
+    stage: "bg-sky/15",
+  },
 };
 
 export function PersonaCard({
@@ -56,6 +87,7 @@ export function PersonaCard({
   blurb,
   cta,
   href,
+  external = false,
   decoration,
 }: {
   tone: Tone;
@@ -64,17 +96,49 @@ export function PersonaCard({
   blurb: string;
   cta: string;
   href: string;
+  /** Open in new tab. Use for AI Fellowship + Sherpas Summer of AI deep-links. */
+  external?: boolean;
   decoration?: React.ReactNode;
 }) {
   const t = toneStyles[tone];
-  return (
-    <Link
+  const className = clsx(
+    "group flex h-full flex-col overflow-hidden rounded-3xl transition will-change-transform hover:-translate-y-1 hover:shadow-2xl",
+    t.bg
+  );
+  const Card = external ? (
+    <a
       href={href}
-      className={clsx(
-        "group flex h-full flex-col overflow-hidden rounded-3xl transition will-change-transform hover:-translate-y-1 hover:shadow-2xl",
-        t.bg
-      )}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={className}
     >
+      {cardInner({ t, who, title, blurb, cta, decoration })}
+    </a>
+  ) : (
+    <Link href={href} className={className}>
+      {cardInner({ t, who, title, blurb, cta, decoration })}
+    </Link>
+  );
+  return Card;
+}
+
+function cardInner({
+  t,
+  who,
+  title,
+  blurb,
+  cta,
+  decoration,
+}: {
+  t: (typeof toneStyles)[Tone];
+  who: string;
+  title: string;
+  blurb: string;
+  cta: string;
+  decoration?: React.ReactNode;
+}) {
+  return (
+    <>
       {/* Top region: pill + title + blurb + CTA */}
       <div className="flex flex-1 flex-col gap-5 p-7 md:p-9">
         <span
@@ -122,6 +186,6 @@ export function PersonaCard({
           </div>
         ) : null}
       </div>
-    </Link>
+    </>
   );
 }
