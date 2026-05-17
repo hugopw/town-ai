@@ -24,7 +24,7 @@ export const brent: Place = {
     type: "borough",
     website: "https://www.brent.gov.uk/",
     pressOutlets: [
-      "Brent &amp; Kilburn Times",
+      "Brent & Kilburn Times",
       "MyLondon (Reach plc Brent desk)",
       "Your Brent (the council's quarterly magazine, c. 135,000 homes)",
       "Asian Voice",
@@ -45,7 +45,7 @@ export const brent: Place = {
     headline:
       "Brent's most AI-exposed workers are also its most stretched. Pretending otherwise isn't a kindness.",
     paragraphs: [
-      "Brent's biggest employment sector is wholesale and retail trade - around one in five jobs - followed by health and social work, with hospitality, logistics and front-line service work concentrated around Wembley Park and the Park Royal industrial estate. These are precisely the categories IPPR's task-level analysis identified as most exposed to generative AI in the first wave. The Greater London Authority's April 2026 analysis puts 46% of London's workforce in roles where AI can already automate some tasks - above the UK average, with over a million London jobs &quot;highly or significantly exposed&quot;.",
+      "Brent's biggest employment sector is wholesale and retail trade - around one in five jobs - followed by health and social work, with hospitality, logistics and front-line service work concentrated around Wembley Park and the Park Royal industrial estate. These are precisely the categories IPPR's task-level analysis identified as most exposed to generative AI in the first wave. The Greater London Authority's April 2026 analysis puts 46% of London's workforce in roles where AI can already automate some tasks - above the UK average, with over a million London jobs ‘highly or significantly exposed’.",
       "The borough hosting that exposure is also one of the least able to absorb it. Brent's median house-price-to-earnings ratio is 14.67x - among the twelve least-affordable local authorities in England and Wales - and it ranks as London's fourth-most-deprived borough, with no Brent LSOA sitting in the least-deprived national quintile. When a job changes shape here, the family can't simply follow it elsewhere. Brent Council itself employs over 2,500 people in administrative functions the Tony Blair Institute estimates could see a quarter of their tasks automated.",
       "Brent has navigated industrial transitions before - Heinz at Harlesden lost 3,500 jobs at peak when it closed in 2000, and Park Royal's light manufacturing shed thousands more through the 80s and 90s. The borough absorbed every shock, but the people who fell through the gaps tended to look like its current residents. Brent has a choice to make now: become a coal-mining borough of the 21st century, or one of the first places that figures out how to apply AI for the good of everyone in it. We don't think the answer is fear. We think the answer is fluency - enough AI literacy across residents, businesses, charities and council that Brent shapes AI's restructuring instead of receiving it.",
     ],
@@ -86,7 +86,7 @@ export const brent: Place = {
       {
         value: "40,000+",
         label:
-          "Workers across Park Royal - the UK's largest industrial estate, straddling Brent, Ealing and Hammersmith &amp; Fulham",
+          "Workers across Park Royal - the UK's largest industrial estate, straddling Brent, Ealing and Hammersmith & Fulham",
         source: "GLA / OPDC · Park Royal Business Group",
       },
       {
@@ -158,7 +158,7 @@ export const brent: Place = {
 
   anchors: [
     {
-      name: "Brent Civic Centre &amp; Wembley Library",
+      name: "Brent Civic Centre & Wembley Library",
       role:
         "The council HQ and the borough's busiest library, on Engineers Way next to Wembley Stadium",
       use: "The room and the front desk for every cohort kick-off, drop-in clinic and graduation.",
@@ -170,13 +170,13 @@ export const brent: Place = {
       use: "Where AI fluency moves quickest from idea to patient impact.",
     },
     {
-      name: "Quintain &amp; Wembley Park",
+      name: "Quintain & Wembley Park",
       role:
         "Master developer of the 85-acre Wembley Park estate - 6,000 homes delivered, c. 10,000 residents, 130+ apprentices to date",
       use: "Direct line to the workforce and apprenticeship pipeline AI is reshaping fastest.",
     },
     {
-      name: "Wembley National Stadium Ltd &amp; The FA",
+      name: "Wembley National Stadium Ltd & The FA",
       role:
         "The 90,000-seat national stadium and one of the world's most recognised civic landmarks",
       use: "The convening venue and a magnet for press, sponsors and teen apprentices.",
@@ -227,7 +227,7 @@ export const brent: Place = {
       pitch:
         "Model real-time visitor flow around the 90,000-seat Wembley Stadium and the estate around it - using TfL footfall, event calendars, weather and Quintain's own data. Route residents and visitors away from the worst pinch points before the squeeze starts.",
       why: "Wembley Park Underground saw 2.87 million exits in summer 2024 alone. The residents who live around it have had no credible way to be heard about what the surges mean for them. A resident-built tool changes that.",
-      owner: "Quintain + Brent Council Transport &amp; Highways + TfL",
+      owner: "Quintain + Brent Council Transport & Highways + TfL",
       first: "See the /worked-example worked prototype.",
       href: "/worked-example",
     },
@@ -379,10 +379,10 @@ export const brent: Place = {
       },
       {
         name: "AI Night School alumni",
-        role: "Apply AI to the analysis and write the resident-facing summary. Own the narrative in the Brent &amp; Kilburn Times and Wembley Park's own channels.",
+        role: "Apply AI to the analysis and write the resident-facing summary. Own the narrative in the Brent & Kilburn Times and Wembley Park's own channels.",
       },
       {
-        name: "Quintain, TfL &amp; council officers",
+        name: "Quintain, TfL & council officers",
         role: "Validate the assumptions, share what data can be shared, and decide the thresholds the alert system uses.",
       },
       {
@@ -415,7 +415,7 @@ export const brent: Place = {
       {
         n: "05",
         title: "Publish, invite challenge",
-        body: "Share it on the Brent.AI site, trail it in the Brent &amp; Kilburn Times and on Wembley Park's own channels. Invite residents and traders to poke holes. Update transparently. That's the whole point.",
+        body: "Share it on the Brent.AI site, trail it in the Brent & Kilburn Times and on Wembley Park's own channels. Invite residents and traders to poke holes. Update transparently. That's the whole point.",
       },
       {
         n: "06",
@@ -433,19 +433,19 @@ export const brent: Place = {
   residentOffer: {
     speakerSeries: [
       {
-        name: "Retail &amp; high-street independents",
+        name: "Retail & high-street independents",
         topic: "AI for indie traders on Ealing Road, Kilburn High Road and Wembley High Road",
         blurb:
           "A practitioner's session on the AI moves that actually shift the needle for an independent on Ealing Road or Kilburn High Road - bookings, marketing, multilingual customer service, inventory.",
       },
       {
-        name: "Public services &amp; local government",
+        name: "Public services & local government",
         topic: "AI in council, NHS and frontline public services",
         blurb:
           "Drawing on the Tony Blair Institute's local-government work, an honest tour of what's already deployed across UK councils and NHS trusts - and what that means for Brent's 2,500-strong council workforce.",
       },
       {
-        name: "Multilingual &amp; community services",
+        name: "Multilingual & community services",
         topic: "AI for a borough that speaks 150 languages",
         blurb:
           "What it actually takes to build trustworthy AI for a borough where the dominant household language is rarely English - translation, cultural calibration, evaluation, and the limits.",
@@ -474,7 +474,7 @@ export const brent: Place = {
       body: "Coordinated content across Brent Council's Facebook (@BrentCouncil), Instagram, X and LinkedIn. We supply the assets in council voice; you decide cadence and timing.",
     },
     {
-      title: "Resident email lists &amp; e-newsletter",
+      title: "Resident email lists & e-newsletter",
       body: "Inclusion in Brent Council's regular resident bulletins and segmented e-newsletters (library events, planning, business). Each programme phase gets its own dedicated send.",
     },
     {
@@ -482,11 +482,11 @@ export const brent: Place = {
       body: "Your Brent reaches around 135,000 households quarterly in print - the only channel that touches digitally-excluded residents at scale. Even one editorial feature transforms the programme's starting line.",
     },
     {
-      title: "Direct mail &amp; letterbox drops",
+      title: "Direct mail & letterbox drops",
       body: "Reach residents in Stonebridge, Harlesden, Kilburn and Church End that no digital channel touches. Coordinated drops by ward keep the programme local where it matters.",
     },
     {
-      title: "Council noticeboards &amp; civic spaces",
+      title: "Council noticeboards & civic spaces",
       body: "Physical noticeboards at Brent Civic Centre, the nine Brent libraries, leisure centres and community centres. The places residents already trust for what's on in the borough.",
     },
     {
@@ -494,29 +494,29 @@ export const brent: Place = {
       body: "The council's warm relationships with the Hindu Council Brent, mosques, churches, tenant and resident associations, Brent CVS, the College of North West London and the faith and community sector.",
     },
     {
-      title: "Press &amp; local media",
-      body: "Brent &amp; Kilburn Times, MyLondon, Asian Voice and BBC London. A council-endorsed launch makes the press story write itself - and the Brent &amp; Kilburn Times will run a human-interest first.",
+      title: "Press & local media",
+      body: "Brent & Kilburn Times, MyLondon, Asian Voice and BBC London. A council-endorsed launch makes the press story write itself - and the Brent & Kilburn Times will run a human-interest first.",
     },
     {
-      title: "Council meetings &amp; agendas",
+      title: "Council meetings & agendas",
       body: "A regular Brent.AI standing item at full council and scrutiny gives residents a visible signal that this is real, sustained civic work - not a one-off announcement.",
     },
     {
-      title: "Civic events &amp; borough moments",
+      title: "Civic events & borough moments",
       body: "Wembley Park Diwali Weekend, the Ealing Road Diwali Parade, Culture Splash, Black History Month and Eid civic events. Each becomes a touchpoint for residents to encounter the programme in person.",
     },
   ],
 
   councilPartners: [
-    "Quintain &amp; Wembley Park",
+    "Quintain & Wembley Park",
     "Brent Integrated Care Partnership / NHS North West London ICB",
     "London North West University Healthcare NHS Trust",
     "College of North West London",
-    "Wembley National Stadium Ltd &amp; The FA",
+    "Wembley National Stadium Ltd & The FA",
     "Brent CVS",
-    "Hindu Council Brent &amp; the BAPS Swaminarayan Mandir",
-    "Park Royal Business Group &amp; OPDC",
-    "BOXPARK Wembley &amp; London Designer Outlet",
+    "Hindu Council Brent & the BAPS Swaminarayan Mandir",
+    "Park Royal Business Group & OPDC",
+    "BOXPARK Wembley & London Designer Outlet",
     "Troubadour Theatre Wembley",
   ],
 
